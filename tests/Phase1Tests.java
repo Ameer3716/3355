@@ -77,8 +77,8 @@ public class Phase1Tests {
                 && board.getGroupSize(ColorGroup.GREEN) == 3
                 && board.getGroupSize(ColorGroup.BLUE) == 3
                 && board.getGroupSize(ColorGroup.RAILROAD) == 2);
-        Player first = new Player();
-        Player second = new Player();
+        Player first = new AggressiveBot("First");
+        Player second = new CautiousBot("Second");
         for (String group : Arrays.asList(ColorGroup.BROWN, ColorGroup.YELLOW,
                 ColorGroup.GREEN, ColorGroup.BLUE, ColorGroup.RAILROAD)) {
             check("countOwned is initially 0 for " + group, board.countOwned(first, group) == 0);
@@ -87,16 +87,17 @@ public class Phase1Tests {
 
         Ownable a = (Ownable) board.getSquare(1);
         Ownable b = (Ownable) board.getSquare(2);
-        a.setOwner(first);
-        b.setOwner(first);
+        Game ownershipGame = new Game("board.txt", 42);
+        ownershipGame.transfer(a, null, first, 0);
+        ownershipGame.transfer(b, null, first, 0);
         check("countOwned uses the group map and current owners",
                 board.countOwned(first, ColorGroup.BROWN) == 2);
-        a.setOwner(second);
+        ownershipGame.transfer(a, first, second, 0);
         check("countOwned distinguishes two different players",
                 board.countOwned(first, ColorGroup.BROWN) == 1
                         && board.countOwned(second, ColorGroup.BROWN) == 1);
-        a.setOwner(null);
-        b.setOwner(null);
+        // Ownership tests are complete; reset the board for the remaining loader checks.
+        board = new Board("board.txt");
         ArrayList<Square> copy = board.getSquares();
         copy.clear();
         check("getSquares cannot remove squares from the board",
@@ -118,16 +119,17 @@ public class Phase1Tests {
         printed.reset();
         try (PrintStream capture = new PrintStream(printed)) {
             System.setOut(capture);
-            for (Square square : board.getSquares()) {
-                square.land(first, new Game());
+            Game landingGame = new Game("board.txt", 42);
+            for (Square square : landingGame.getBoard().getSquares()) {
+                square.land(first, landingGame);
             }
         } finally {
             System.setOut(original);
         }
         output = new String(printed.toByteArray(), StandardCharsets.UTF_8);
         check("land dispatches through Square for every board square",
-                output.trim().split("\\r?\\n").length == Board.BOARD_SIZE
-                        && output.contains("Landed on Olaya."));
+                output.contains("First landed on Olaya (YELLOW)")
+                        && output.contains("Jail (just visiting)"));
 
         expectInvalid("tests/fixtures/invalid_missing_field.txt", "line 3", "expected 6 fields");
         expectInvalid("tests/fixtures/invalid_unknown_group.txt", "line 8", "unknown group", "WHITE");

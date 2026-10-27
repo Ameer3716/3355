@@ -29,6 +29,14 @@ public class Board {
         return squares.get(index);
     }
 
+    public Ownable getOwnable(int index) {
+        Square square = getSquare(index);
+        if (!(square instanceof Ownable)) {
+            throw new IllegalArgumentException("Square " + index + " cannot be owned.");
+        }
+        return (Ownable) square;
+    }
+
     public int getGroupSize(String group) {
         ArrayList<Ownable> members = groups.get(group);
         return members == null ? 0 : members.size();

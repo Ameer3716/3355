@@ -40,7 +40,7 @@ public class StationSquare extends Square implements Ownable {
 
     @Override
     public void land(Player p, Game g) {
-        System.out.println("Landed on " + getName() + ".");
+        g.landOnOwnable(this, p);
     }
 
     @Override

@@ -1,0 +1,378 @@
+**************************************************
+**             Welcome to RiyadhPoly             **
+**************************************************
+Board loaded: 20 squares.
+Seed (press Enter for random): Player 1 name: Player 1 type (C = cautious, A = aggressive): Player 2 name: Player 2 type (C = cautious, A = aggressive): Player 3 name: Player 3 type (C = cautious, A = aggressive): Player 4 name: Player 4 type (C = cautious, A = aggressive): Playing order: Amal -> Sara -> Noura -> Huda
+
+========== ROUND 1 ==========
+Amal's turn. Rolled 3 + 4 = 7. Moving to square 7.
+Amal landed on Central Station (RAILROAD). Unowned, price $300.
+Amal bought Central Station for $300.
+Sara's turn. Rolled 1 + 3 = 4. Moving to square 4.
+Sara landed on Al-Oud (BROWN). Unowned, price $120.
+Sara bought Al-Oud for $120.
+Noura's turn. Rolled 1 + 2 = 3. Moving to square 3.
+Noura landed on Chance. Cards arrive in Phase 3.
+Huda's turn. Rolled 6 + 3 = 9. Moving to square 9.
+Huda landed on King Fahd (YELLOW). Unowned, price $250.
+Huda bought King Fahd for $250.
+---------- ROUND 1 LEADERBOARD ----------
+1. Noura    cash $800   net worth $800
+2. Sara    cash $680   net worth $800
+3. Huda    cash $550   net worth $800
+4. Amal    cash $500   net worth $800
+
+========== ROUND 2 ==========
+Amal's turn. Rolled 2 + 6 = 8. Moving to square 15.
+Amal landed on Jail (just visiting).
+Sara's turn. Rolled 3 + 3 = 6. Moving to square 10.
+Sara landed on Park. Take a rest.
+Noura's turn. Rolled 1 + 1 = 2. Moving to square 5.
+Noura landed on Go To Jail. Jail penalties arrive in Phase 3.
+Huda's turn. Rolled 3 + 3 = 6. Moving to square 15.
+Huda landed on Jail (just visiting).
+---------- ROUND 2 LEADERBOARD ----------
+1. Noura    cash $800   net worth $800
+2. Sara    cash $680   net worth $800
+3. Huda    cash $550   net worth $800
+4. Amal    cash $500   net worth $800
+
+========== ROUND 3 ==========
+Amal's turn. Rolled 1 + 1 = 2. Moving to square 17.
+Amal landed on Grand Terminal (RAILROAD). Unowned, price $300.
+Amal bought Grand Terminal for $300.
+Sara's turn. Rolled 2 + 6 = 8. Moving to square 18.
+Sara landed on Rafal (BLUE). Unowned, price $700.
+Sara does not buy Rafal.
+Noura's turn. Rolled 3 + 2 = 5. Moving to square 10.
+Noura landed on Park. Take a rest.
+Huda's turn. Rolled 3 + 4 = 7. Moving to square 2.
+Huda passed GO and collected $100.
+Huda landed on Al-Bathaa (BROWN). Unowned, price $100.
+Huda bought Al-Bathaa for $100.
+---------- ROUND 3 LEADERBOARD ----------
+1. Huda    cash $550   net worth $900
+2. Noura    cash $800   net worth $800
+3. Sara    cash $680   net worth $800
+4. Amal    cash $200   net worth $800
+
+========== ROUND 4 ==========
+Amal's turn. Rolled 6 + 4 = 10. Moving to square 7.
+Amal passed GO and collected $100.
+Amal landed on Central Station (RAILROAD). Already owned by you.
+Sara's turn. Rolled 5 + 5 = 10. Moving to square 8.
+Sara passed GO and collected $100.
+Sara landed on Olaya (YELLOW). Unowned, price $220.
+Sara bought Olaya for $220.
+Noura's turn. Rolled 2 + 1 = 3. Moving to square 13.
+Noura landed on Chance. Cards arrive in Phase 3.
+Huda's turn. Rolled 5 + 1 = 6. Moving to square 8.
+Huda landed on Olaya (YELLOW). Owned by Sara. Rent: $112.
+Huda paid $112 to Sara.
+---------- ROUND 4 LEADERBOARD ----------
+1. Sara    cash $672   net worth $1012
+2. Amal    cash $300   net worth $900
+3. Noura    cash $800   net worth $800
+4. Huda    cash $438   net worth $788
+
+========== ROUND 5 ==========
+Amal's turn. Rolled 3 + 6 = 9. Moving to square 16.
+Amal landed on Kingdom Centre (BLUE). Unowned, price $650.
+Amal does not buy Kingdom Centre.
+Sara's turn. Rolled 6 + 6 = 12. Moving to square 0.
+Sara passed GO and collected $100.
+Sara landed on GO.
+Noura's turn. Rolled 1 + 2 = 3. Moving to square 16.
+Noura landed on Kingdom Centre (BLUE). Unowned, price $650.
+Noura does not buy Kingdom Centre.
+Huda's turn. Rolled 2 + 1 = 3. Moving to square 11.
+Huda landed on KAFD (GREEN). Unowned, price $400.
+Huda bought KAFD for $400.
+---------- ROUND 5 LEADERBOARD ----------
+1. Sara    cash $772   net worth $1112
+2. Amal    cash $300   net worth $900
+3. Noura    cash $800   net worth $800
+4. Huda    cash $38   net worth $788
+
+========== ROUND 6 ==========
+Amal's turn. Rolled 6 + 2 = 8. Moving to square 4.
+Amal passed GO and collected $100.
+Amal landed on Al-Oud (BROWN). Owned by Sara. Rent: $56.
+Amal paid $56 to Sara.
+Sara's turn. Rolled 6 + 2 = 8. Moving to square 8.
+Sara landed on Olaya (YELLOW). Already owned by you.
+Noura's turn. Rolled 6 + 1 = 7. Moving to square 3.
+Noura passed GO and collected $100.
+Noura landed on Chance. Cards arrive in Phase 3.
+Huda's turn. Rolled 2 + 6 = 8. Moving to square 19.
+Huda landed on Diriyah (BLUE). Unowned, price $800.
+Huda does not buy Diriyah.
+---------- ROUND 6 LEADERBOARD ----------
+1. Sara    cash $828   net worth $1168
+2. Amal    cash $344   net worth $944
+3. Noura    cash $900   net worth $900
+4. Huda    cash $38   net worth $788
+
+========== ROUND 7 ==========
+Amal's turn. Rolled 2 + 2 = 4. Moving to square 8.
+Amal landed on Olaya (YELLOW). Owned by Sara. Rent: $112.
+Amal paid $112 to Sara.
+Sara's turn. Rolled 2 + 3 = 5. Moving to square 13.
+Sara landed on Chance. Cards arrive in Phase 3.
+Noura's turn. Rolled 3 + 5 = 8. Moving to square 11.
+Noura landed on KAFD (GREEN). Owned by Huda. Rent: $200.
+Noura paid $200 to Huda.
+Huda's turn. Rolled 3 + 5 = 8. Moving to square 7.
+Huda passed GO and collected $100.
+Huda landed on Central Station (RAILROAD). Owned by Amal (whole group). Rent: $200.
+Huda paid $200 to Amal.
+---------- ROUND 7 LEADERBOARD ----------
+1. Sara    cash $940   net worth $1280
+2. Amal    cash $432   net worth $1032
+3. Huda    cash $138   net worth $888
+4. Noura    cash $700   net worth $700
+
+========== ROUND 8 ==========
+Amal's turn. Rolled 2 + 2 = 4. Moving to square 12.
+Amal landed on Al-Nakheel (GREEN). Unowned, price $450.
+Amal does not buy Al-Nakheel.
+Sara's turn. Rolled 4 + 4 = 8. Moving to square 1.
+Sara passed GO and collected $100.
+Sara landed on Al-Shemaisy (BROWN). Unowned, price $100.
+Sara bought Al-Shemaisy for $100.
+Noura's turn. Rolled 2 + 6 = 8. Moving to square 19.
+Noura landed on Diriyah (BLUE). Unowned, price $800.
+Noura does not buy Diriyah.
+Huda's turn. Rolled 3 + 2 = 5. Moving to square 12.
+Huda landed on Al-Nakheel (GREEN). Unowned, price $450.
+Huda does not buy Al-Nakheel.
+---------- ROUND 8 LEADERBOARD ----------
+1. Sara    cash $940   net worth $1380
+2. Amal    cash $432   net worth $1032
+3. Huda    cash $138   net worth $888
+4. Noura    cash $700   net worth $700
+
+========== ROUND 9 ==========
+Amal's turn. Rolled 3 + 3 = 6. Moving to square 18.
+Amal landed on Rafal (BLUE). Unowned, price $700.
+Amal does not buy Rafal.
+Sara's turn. Rolled 3 + 2 = 5. Moving to square 6.
+Sara landed on Al-Tahlia (YELLOW). Unowned, price $200.
+Sara bought Al-Tahlia for $200.
+Noura's turn. Rolled 4 + 4 = 8. Moving to square 7.
+Noura passed GO and collected $100.
+Noura landed on Central Station (RAILROAD). Owned by Amal (whole group). Rent: $200.
+Noura paid $200 to Amal.
+Huda's turn. Rolled 5 + 6 = 11. Moving to square 3.
+Huda passed GO and collected $100.
+Huda landed on Chance. Cards arrive in Phase 3.
+---------- ROUND 9 LEADERBOARD ----------
+1. Sara    cash $740   net worth $1380
+2. Amal    cash $632   net worth $1232
+3. Huda    cash $238   net worth $988
+4. Noura    cash $600   net worth $600
+
+========== ROUND 10 ==========
+Amal's turn. Rolled 2 + 2 = 4. Moving to square 2.
+Amal passed GO and collected $100.
+Amal landed on Al-Bathaa (BROWN). Owned by Huda. Rent: $48.
+Amal paid $48 to Huda.
+Sara's turn. Rolled 2 + 6 = 8. Moving to square 14.
+Sara landed on Al-Aqiq (GREEN). Unowned, price $500.
+Sara does not buy Al-Aqiq.
+Noura's turn. Rolled 3 + 5 = 8. Moving to square 15.
+Noura landed on Jail (just visiting).
+Huda's turn. Rolled 6 + 4 = 10. Moving to square 13.
+Huda landed on Chance. Cards arrive in Phase 3.
+---------- ROUND 10 LEADERBOARD ----------
+1. Sara    cash $740   net worth $1380
+2. Amal    cash $684   net worth $1284
+3. Huda    cash $286   net worth $1036
+4. Noura    cash $600   net worth $600
+
+========== ROUND 11 ==========
+Amal's turn. Rolled 1 + 5 = 6. Moving to square 8.
+Amal landed on Olaya (YELLOW). Owned by Sara. Rent: $112.
+Amal paid $112 to Sara.
+Sara's turn. Rolled 6 + 3 = 9. Moving to square 3.
+Sara passed GO and collected $100.
+Sara landed on Chance. Cards arrive in Phase 3.
+Noura's turn. Rolled 2 + 4 = 6. Moving to square 1.
+Noura passed GO and collected $100.
+Noura landed on Al-Shemaisy (BROWN). Owned by Sara. Rent: $40.
+Noura paid $40 to Sara.
+Huda's turn. Rolled 4 + 1 = 5. Moving to square 18.
+Huda landed on Rafal (BLUE). Unowned, price $700.
+Huda does not buy Rafal.
+---------- ROUND 11 LEADERBOARD ----------
+1. Sara    cash $992   net worth $1632
+2. Amal    cash $572   net worth $1172
+3. Huda    cash $286   net worth $1036
+4. Noura    cash $660   net worth $660
+
+========== ROUND 12 ==========
+Amal's turn. Rolled 3 + 2 = 5. Moving to square 13.
+Amal landed on Chance. Cards arrive in Phase 3.
+Sara's turn. Rolled 4 + 1 = 5. Moving to square 8.
+Sara landed on Olaya (YELLOW). Already owned by you.
+Noura's turn. Rolled 4 + 4 = 8. Moving to square 9.
+Noura landed on King Fahd (YELLOW). Owned by Huda. Rent: $128.
+Noura paid $128 to Huda.
+Huda's turn. Rolled 6 + 4 = 10. Moving to square 8.
+Huda passed GO and collected $100.
+Huda landed on Olaya (YELLOW). Owned by Sara. Rent: $112.
+Huda paid $112 to Sara.
+---------- ROUND 12 LEADERBOARD ----------
+1. Sara    cash $1104   net worth $1744
+2. Amal    cash $572   net worth $1172
+3. Huda    cash $402   net worth $1152
+4. Noura    cash $532   net worth $532
+
+========== ROUND 13 ==========
+Amal's turn. Rolled 4 + 1 = 5. Moving to square 18.
+Amal landed on Rafal (BLUE). Unowned, price $700.
+Amal does not buy Rafal.
+Sara's turn. Rolled 3 + 5 = 8. Moving to square 16.
+Sara landed on Kingdom Centre (BLUE). Unowned, price $650.
+Sara bought Kingdom Centre for $650.
+Noura's turn. Rolled 1 + 5 = 6. Moving to square 15.
+Noura landed on Jail (just visiting).
+Huda's turn. Rolled 1 + 2 = 3. Moving to square 11.
+Huda landed on KAFD (GREEN). Already owned by you.
+---------- ROUND 13 LEADERBOARD ----------
+1. Sara    cash $454   net worth $1744
+2. Amal    cash $572   net worth $1172
+3. Huda    cash $402   net worth $1152
+4. Noura    cash $532   net worth $532
+
+========== ROUND 14 ==========
+Amal's turn. Rolled 6 + 2 = 8. Moving to square 6.
+Amal passed GO and collected $100.
+Amal landed on Al-Tahlia (YELLOW). Owned by Sara. Rent: $100.
+Amal paid $100 to Sara.
+Sara's turn. Rolled 4 + 3 = 7. Moving to square 3.
+Sara passed GO and collected $100.
+Sara landed on Chance. Cards arrive in Phase 3.
+Noura's turn. Rolled 2 + 3 = 5. Moving to square 0.
+Noura passed GO and collected $100.
+Noura landed on GO.
+Huda's turn. Rolled 3 + 5 = 8. Moving to square 19.
+Huda landed on Diriyah (BLUE). Unowned, price $800.
+Huda does not buy Diriyah.
+---------- ROUND 14 LEADERBOARD ----------
+1. Sara    cash $654   net worth $1944
+2. Amal    cash $572   net worth $1172
+3. Huda    cash $402   net worth $1152
+4. Noura    cash $632   net worth $632
+
+========== ROUND 15 ==========
+Amal's turn. Rolled 4 + 2 = 6. Moving to square 12.
+Amal landed on Al-Nakheel (GREEN). Unowned, price $450.
+Amal bought Al-Nakheel for $450.
+Sara's turn. Rolled 4 + 1 = 5. Moving to square 8.
+Sara landed on Olaya (YELLOW). Already owned by you.
+Noura's turn. Rolled 5 + 2 = 7. Moving to square 7.
+Noura landed on Central Station (RAILROAD). Owned by Amal (whole group). Rent: $200.
+Noura paid $200 to Amal.
+Huda's turn. Rolled 3 + 4 = 7. Moving to square 6.
+Huda passed GO and collected $100.
+Huda landed on Al-Tahlia (YELLOW). Owned by Sara. Rent: $100.
+Huda paid $100 to Sara.
+---------- ROUND 15 LEADERBOARD ----------
+1. Sara    cash $754   net worth $2044
+2. Amal    cash $322   net worth $1372
+3. Huda    cash $402   net worth $1152
+4. Noura    cash $432   net worth $432
+
+========== ROUND 16 ==========
+Amal's turn. Rolled 1 + 1 = 2. Moving to square 14.
+Amal landed on Al-Aqiq (GREEN). Unowned, price $500.
+Amal does not buy Al-Aqiq.
+Sara's turn. Rolled 3 + 2 = 5. Moving to square 13.
+Sara landed on Chance. Cards arrive in Phase 3.
+Noura's turn. Rolled 3 + 1 = 4. Moving to square 11.
+Noura landed on KAFD (GREEN). Owned by Huda. Rent: $200.
+Noura paid $200 to Huda.
+Huda's turn. Rolled 5 + 4 = 9. Moving to square 15.
+Huda landed on Jail (just visiting).
+---------- ROUND 16 LEADERBOARD ----------
+1. Sara    cash $754   net worth $2044
+2. Amal    cash $322   net worth $1372
+3. Huda    cash $602   net worth $1352
+4. Noura    cash $232   net worth $232
+
+========== ROUND 17 ==========
+Amal's turn. Rolled 2 + 5 = 7. Moving to square 1.
+Amal passed GO and collected $100.
+Amal landed on Al-Shemaisy (BROWN). Owned by Sara. Rent: $40.
+Amal paid $40 to Sara.
+Sara's turn. Rolled 5 + 3 = 8. Moving to square 1.
+Sara passed GO and collected $100.
+Sara landed on Al-Shemaisy (BROWN). Already owned by you.
+Noura's turn. Rolled 5 + 5 = 10. Moving to square 1.
+Noura passed GO and collected $100.
+Noura landed on Al-Shemaisy (BROWN). Owned by Sara. Rent: $40.
+Noura paid $40 to Sara.
+Huda's turn. Rolled 1 + 3 = 4. Moving to square 19.
+Huda landed on Diriyah (BLUE). Unowned, price $800.
+Huda does not buy Diriyah.
+---------- ROUND 17 LEADERBOARD ----------
+1. Sara    cash $934   net worth $2224
+2. Amal    cash $382   net worth $1432
+3. Huda    cash $602   net worth $1352
+4. Noura    cash $292   net worth $292
+
+========== ROUND 18 ==========
+Amal's turn. Rolled 4 + 3 = 7. Moving to square 8.
+Amal landed on Olaya (YELLOW). Owned by Sara. Rent: $112.
+Amal paid $112 to Sara.
+Sara's turn. Rolled 6 + 2 = 8. Moving to square 9.
+Sara landed on King Fahd (YELLOW). Owned by Huda.
+Sara owns the rest of YELLOW and buys King Fahd from Huda for $375.
+Noura's turn. Rolled 6 + 6 = 12. Moving to square 13.
+Noura landed on Chance. Cards arrive in Phase 3.
+Huda's turn. Rolled 2 + 6 = 8. Moving to square 7.
+Huda passed GO and collected $100.
+Huda landed on Central Station (RAILROAD). Owned by Amal (whole group). Rent: $200.
+Huda paid $200 to Amal.
+---------- ROUND 18 LEADERBOARD ----------
+1. Sara    cash $671   net worth $2211
+2. Amal    cash $470   net worth $1520
+3. Huda    cash $877   net worth $1377
+4. Noura    cash $292   net worth $292
+
+========== ROUND 19 ==========
+Amal's turn. Rolled 3 + 6 = 9. Moving to square 17.
+Amal landed on Grand Terminal (RAILROAD). Already owned by you.
+Sara's turn. Rolled 1 + 6 = 7. Moving to square 16.
+Sara landed on Kingdom Centre (BLUE). Already owned by you.
+Noura's turn. Rolled 2 + 6 = 8. Moving to square 1.
+Noura passed GO and collected $100.
+Noura landed on Al-Shemaisy (BROWN). Owned by Sara. Rent: $40.
+Noura paid $40 to Sara.
+Huda's turn. Rolled 5 + 6 = 11. Moving to square 18.
+Huda landed on Rafal (BLUE). Unowned, price $700.
+Huda bought Rafal for $700.
+---------- ROUND 19 LEADERBOARD ----------
+1. Sara    cash $711   net worth $2251
+2. Amal    cash $470   net worth $1520
+3. Huda    cash $177   net worth $1377
+4. Noura    cash $352   net worth $352
+
+========== ROUND 20 ==========
+Amal's turn. Rolled 6 + 4 = 10. Moving to square 7.
+Amal passed GO and collected $100.
+Amal landed on Central Station (RAILROAD). Already owned by you.
+Sara's turn. Rolled 2 + 2 = 4. Moving to square 0.
+Sara passed GO and collected $100.
+Sara landed on GO.
+Noura's turn. Rolled 3 + 6 = 9. Moving to square 10.
+Noura landed on Park. Take a rest.
+Huda's turn. Rolled 3 + 4 = 7. Moving to square 5.
+Huda passed GO and collected $100.
+Huda landed on Go To Jail. Jail penalties arrive in Phase 3.
+---------- ROUND 20 LEADERBOARD ----------
+1. Sara    cash $811   net worth $2351
+2. Amal    cash $570   net worth $1620
+3. Huda    cash $277   net worth $1477
+4. Noura    cash $352   net worth $352

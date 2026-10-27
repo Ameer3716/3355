@@ -1,0 +1,119 @@
+Build complete: RiyadhPoly.jar
+PASS: loads exactly 20 squares
+PASS: preserves indexes 0 through 19 in order
+PASS: creates GoSquare
+PASS: creates ChanceSquare
+PASS: creates ParkSquare
+PASS: creates JailSquare
+PASS: creates GoToJailSquare
+PASS: creates PropertySquare implementing Ownable
+PASS: creates StationSquare implementing Ownable
+PASS: reads the supplied Olaya data
+PASS: builds all five group lists
+PASS: countOwned is initially 0 for BROWN
+PASS: countOwned is initially 0 for YELLOW
+PASS: countOwned is initially 0 for GREEN
+PASS: countOwned is initially 0 for BLUE
+PASS: countOwned is initially 0 for RAILROAD
+PASS: null is not counted as a player
+PASS: countOwned uses the group map and current owners
+PASS: countOwned distinguishes two different players
+PASS: getSquares cannot remove squares from the board
+PASS: printBoard prints 20 lines including price and rent
+PASS: land dispatches through Square for every board square
+PASS: rejects tests/fixtures/invalid_missing_field.txt
+PASS: rejects tests/fixtures/invalid_unknown_group.txt
+PASS: rejects tests/fixtures/invalid_non_numeric_price.txt
+PASS: wraps NumberFormatException as a checked exception
+PASS: rejects /tmp/riyadhpoly-missing-14816895342199038718/missing-board.txt
+PASS: uses changed file names, prices and rents without hard-coding
+PASS: rejects /tmp/riyadhpoly-invalid-1231755733042496109.txt
+PASS: rejects /tmp/riyadhpoly-invalid-6138476454255716760.txt
+PASS: rejects /tmp/riyadhpoly-invalid-445334246189901954.txt
+PASS: rejects /tmp/riyadhpoly-invalid-3504266250414415284.txt
+PASS: rejects /tmp/riyadhpoly-invalid-12222882650924966094.txt
+
+All 33 acceptance checks passed.
+PASS: cautious refuses below $300 reserve
+PASS: cautious accepts exactly $300 reserve
+PASS: aggressive refuses unaffordable square
+PASS: aggressive buys with exact funds
+A landed on Al-Shemaisy (BROWN). Unowned, price $100.
+A bought Al-Shemaisy for $100.
+PASS: normal purchase updates cash, list, owner and net worth
+A landed on Al-Shemaisy (BROWN). Already owned by you.
+PASS: own-square landing changes nothing
+C landed on Al-Shemaisy (BROWN). Owned by A. Rent: $40.
+C paid $40 to A.
+PASS: single-property rent moves base rent between players
+C landed on Al-Shemaisy (BROWN). Owned by A (whole group). Rent: $80.
+C paid $80 to A.
+PASS: full-property group doubles rent
+PASS: owned-square getter protects list
+C landed on Al-Oud (BROWN). Unowned, price $120.
+C bought Al-Oud for $120.
+PASS: cautious completes unowned group at normal price without reserve
+C landed on Al-Oud (BROWN). Unowned, price $120.
+C does not buy Al-Oud.
+PASS: completion cannot exceed cash
+C landed on Al-Oud (BROWN). Owned by A.
+C owns the rest of BROWN and buys Al-Oud from A for $180.
+PASS: cautious buy-out uses exact funds and no reserve
+PASS: invalid transfer leaves ownership and money intact
+C landed on Al-Oud (BROWN). Owned by A. Rent: $56.
+C paid $56 to A.
+PASS: unaffordable buy-out falls back to base rent
+Station owner landed on Central Station (RAILROAD). Unowned, price $300.
+Station owner bought Central Station for $300.
+Visitor landed on Central Station (RAILROAD). Owned by Station owner. Rent: $100.
+Visitor paid $100 to Station owner.
+PASS: station purchase and single-station $100 rent
+Station owner landed on Grand Terminal (RAILROAD). Unowned, price $300.
+Station owner bought Grand Terminal for $300.
+Visitor landed on Central Station (RAILROAD). Owned by Station owner (whole group). Rent: $200.
+Visitor paid $200 to Station owner.
+PASS: both stations double rent to $200
+C landed on Grand Terminal (RAILROAD). Owned by A.
+C owns the rest of RAILROAD and buys Grand Terminal from A for $450.
+PASS: station buy-out costs $450 and updates both lists
+C landed on Grand Terminal (RAILROAD). Unowned, price $300.
+C bought Grand Terminal for $300.
+PASS: last unowned station is normal $300 purchase
+Visitor landed on Al-Shemaisy (BROWN). Owned by Owner. Rent: $40.
+Visitor paid $40 to Owner.
+PASS: Phase 2 permits negative cash and does not release ownership
+PASS: specials print messages without Phase 3 effects
+PASS: 1000 dice rolls match one seeded Random exactly
+Mover's turn. Rolled 3 + 4 = 7. Moving to square 0.
+Mover passed GO and collected $100.
+Mover landed on GO.
+PASS: movement and salary from 13
+Mover's turn. Rolled 3 + 4 = 7. Moving to square 3.
+Mover passed GO and collected $100.
+Mover landed on Chance. Cards arrive in Phase 3.
+PASS: movement and salary from 16
+Mover's turn. Rolled 3 + 4 = 7. Moving to square 10.
+Mover landed on Park. Take a rest.
+PASS: movement and salary from 3
+PASS: compareTo sorts worth descending, cash descending, then name
+PASS: same seed and inputs produce byte-for-byte same 20-round output
+PASS: all 20 rounds, turns and leaderboards executed
+PASS: leaderboard never reorders turn list
+PASS: invalid seed, overflow, blank name and bot type re-prompt safely
+PASS: empty seed accepts random mode
+PASS: EOF cancels without crashing or looping
+All 31 Phase 2 checks passed.
+Amal landed on Al-Oud (BROWN). Owned by Sara.
+Amal owns the rest of BROWN and buys Al-Oud from Sara for $180.
+Owner of Al-Oud: Amal
+Sara landed on Al-Bathaa (BROWN). Owned by Amal (whole group). Rent: $96.
+Sara paid $96 to Amal.
+Sara's cash: 764
+RentTest passed: $180 buy-out, $96 doubled rent, Sara cash $764.
+
+PASS: packaged JAR, 20 rounds, 80 turns, stable order, identical seeded output
+PASS: packaged JAR recovers from invalid input and completes the game
+PASS: packaged JAR rejects all three malformed boards with exit status 1
+PASS: packaged JAR handles end of input
+PASS: changing only NUM_PLAYERS to 2 gives 20 rounds and 40 turns
+All 5 CLI checks passed.

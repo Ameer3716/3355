@@ -6,7 +6,7 @@ public class GoToJailSquare extends Square {
 
     @Override
     public void land(Player p, Game g) {
-        System.out.println("Landed on " + getName() + ".");
+        System.out.println(p.getName() + " landed on Go To Jail. Jail penalties arrive in Phase 3.");
     }
 }
 

@@ -4,9 +4,9 @@ cd /d "%~dp0"
 if not exist build mkdir build
 where javac >nul 2>nul
 if errorlevel 1 (
-    java -m jdk.compiler/com.sun.tools.javac.Main -encoding UTF-8 -d build src\*.java
+    java -m jdk.compiler/com.sun.tools.javac.Main -source 8 -target 8 -Xlint:-options -encoding UTF-8 -d build src\*.java
 ) else (
-    javac -encoding UTF-8 -d build src\*.java
+    javac -source 8 -target 8 -Xlint:-options -encoding UTF-8 -d build src\*.java
 )
 if errorlevel 1 exit /b 1
 where jar >nul 2>nul

@@ -1,101 +1,111 @@
-# RiyadhPoly - Phase 1: Design and Board
+# RiyadhPoly — Phase 2: Players and Money
 
-This is a standalone Java project with no Maven, Gradle or external libraries.
-The supplied `board.txt` and both supplied diagram files are included unchanged.
+A standalone Java console game, built on the supplied Phase 1 project. No Maven,
+Gradle, external libraries, services, API keys, or network connection are needed to play.
+The original board and planned whole-project draw.io diagram are preserved.
 
-## Run on Windows
+## Run
 
-1. Extract the complete ZIP into a folder.
-2. Make sure Java 8 or newer is installed and available on PATH.
-3. Open the extracted `RiyadhPoly_Phase1_Project` folder and double-click `run.bat`.
+Install Java 8 or newer. From the project root:
 
-The included `RiyadhPoly.jar` is already compiled. A JDK is needed only to rebuild,
-run the source tests, or work on the Java files in an IDE.
-
-From a terminal opened in the project folder:
-
-```text
+```sh
 java -jar RiyadhPoly.jar
+# Or load the instructor's board:
+java -jar RiyadhPoly.jar path/to/board.txt
 ```
 
-To load another board file:
+Enter a whole-number seed (for example `42`), or press Enter for random play.
+Then enter four names and bot types: `C` (cautious) or `A` (aggressive).
+Invalid seeds, blank names and unknown bot types are re-prompted; EOF cancels safely.
+After setup the game runs all 20 rounds automatically. The same seed AND player
+inputs AND board produce exactly the same output. Dice need not match the overview's
+illustrative dice values.
 
-```text
-java -jar RiyadhPoly.jar "C:\path\to\another-board.txt"
+Windows: double-click `run.bat`, or use the terminal commands above.
+Linux/macOS: `sh run.sh`. These scripts use the packaged JAR; rebuild after edits.
+
+## Build and test
+
+A JDK is required to compile. Java 21 was used for validation. Scripts also support
+this cloud image's compiler modules when the `javac` and `jar` launchers are absent.
+Source and bytecode target Java 8; execution on Java 8 itself has not been tested.
+
+Linux/macOS:
+
+```sh
+sh build.sh
+sh test.sh
+java -cp build RentTest
+# Optional extra CLI checks; requires Python 3:
+python3 tests/verify_cli.py
 ```
 
-On macOS or Linux, run `sh run.sh` from the extracted project folder.
+Windows: `build.bat`, `test.bat`, then `java -cp build RentTest`.
+The Windows scripts have been updated but were not executed on Windows here.
+To work in an IDE, use `src` as the source directory, no package, and the project
+root as the working directory. Run `RiyadhPolyApp.main` or `RentTest.main`.
 
-## Rebuild and test
+## Rules and design
 
-Windows: run `build.bat` to rebuild, or `test.bat` for the acceptance checks.
-macOS/Linux: run `sh build.sh` or `sh test.sh`.
+- `Player` is abstract, implements `Comparable<Player>`, and holds name, $800 cash,
+  GO position, an owned-square list, and `turnsInJail` for Phase 3.
+- `AggressiveBot.wantsToBuy` buys whenever affordable. `CautiousBot.wantsToBuy`
+  leaves at least $300 for ordinary purchases. `Game` overrides that reserve when
+  an affordable normal purchase or buy-out completes a group.
+- `Dice` uses one `Random` created at startup, rolling two six-sided dice in order.
+- Each player moves forward by the sum modulo 20 and gets $100 on passing or
+  landing on GO. `Square.land` dispatches the landing polymorphically.
+- `PropertySquare` and `StationSquare` delegate to the same `Game.landOnOwnable`.
+  Unowned squares use normal prices; your own squares cost nothing. An opponent's
+  square is bought out at 1.5 times its price only if you own every other square
+  in its group and can afford the buy-out. Otherwise you pay the owner rent.
+- A full group doubles board-file base rent. Stations are the two-member RAILROAD
+  group: $100 base rent, $200 full-group rent; station buy-out costs $450.
+- All purchases and buy-outs use `Game.transfer` to update cash, the square owner,
+  and BOTH ownership lists. Net worth values squares at their original purchase
+  price, even after a buy-out.
+- After each round a COPY of the player list is sorted with `Collections.sort`:
+  net worth descending, cash descending, then names ascending. Turn order stays
+  in creation order. Change only `Game.NUM_PLAYERS` to change the player count.
 
-Standard JDK commands, without the scripts:
+Phase 2 intentionally leaves Chance and Go To Jail as printed placeholders. GO,
+Park and Jail print messages (Jail is just visiting). No Chance deck, jail penalty,
+bankruptcy elimination or final winner is implemented: the phase brief assigns
+these to Phase 3. Negative cash is allowed and every player keeps taking turns for
+all 20 rounds in this phase.
 
-```text
-mkdir build
-javac -encoding UTF-8 -d build src/*.java
-java -cp build RiyadhPolyApp
-```
+All supplied board prices are even, so buy-out amounts are exact integers. For an
+alternate board with odd prices, the integer-cash implementation truncates a half
+dollar buy-out down; the brief does not specify fractional-dollar rounding.
 
-Open the `src` folder in your IDE, add its files to a Java project, and run
-`RiyadhPolyApp.main`. Set the working directory to the project root so that
-`board.txt` can be found. You can also pass a board filename as an argument.
+## Check-in and evidence
 
-## What Phase 1 implements
+1. Run `java -jar RiyadhPoly.jar` with your instructor's seed and four players.
+2. Run `java -cp build RentTest` after a build. Expect Al-Oud's owner to become Amal
+   at $180, then $96 rent for Al-Bathaa and Sara's cash of **$764**. The test fails
+   explicitly if the amounts or ownership lists are wrong; `-ea` is not needed.
+3. Read [the requirement checklist](docs/phase2_requirements.md) and
+   [the code explanation](docs/phase2_check_in.md) before the check-in.
 
-- `Square` is abstract and its seven subclasses override `land(Player, Game)`.
-- `PropertySquare` and `StationSquare` implement `Ownable`; owners start as null.
-- `ColorGroup` declares all five public static final group names.
-- `Board` loads 20 ordered squares from a six-field CSV text file and builds
-  `Map<String, ArrayList<Ownable>>` while loading.
-- Comments and empty lines are skipped. Trailing empty CSV fields are preserved.
-- `InvalidBoardException` is checked and retains causes for I/O and numeric errors.
-- Invalid input prints one clear error and stops with exit code 1.
-- `Player` and `Game` are empty stubs, exactly as requested for this phase.
-- `countOwned` returns 0 for every group while the squares are unowned.
+`sh test.sh` runs 33 Phase 1 regression checks, 31 Phase 2 checks and RentTest.
+The five extra CLI checks run the packaged JAR twice, check all 80 turns and their
+order, exercise invalid input and board failures, and compile a temporary version
+with ONLY `NUM_PLAYERS` changed to 2 to verify all 40 turns. They leave source intact.
 
-The whole-project diagram deliberately includes future classes and planned members.
-Bots, Comparable, the game loop, dice, money and RentTest belong to Phase 2;
-chance cards, jail and bankruptcy belong to Phase 3. They are not implemented here.
-`Phase1Tests` is a separate acceptance-test runner, not the future `RentTest` class.
-Small validation helpers such as `ColorGroup.isValid` and `Board.parseNumber` are
-implementation helpers permitted by the brief.
+Actual results and a 20-round seed-42 game are in `docs/phase2_*output.txt` and
+`docs/phase2_test_results.txt`. Prompts do not echo redirected input; the sample
+uses seed 42, Amal/A, Sara/C, Noura/C, Huda/A. Original `docs/` files without the
+`phase2_` prefix are historical Phase 1 evidence.
 
-The loader checks the required errors and also rejects missing names, incorrect
-index order/count, negative prices/rents, or non-empty monetary fields on special
-squares. Properties use the four colour groups and stations use RAILROAD.
-It does not hard-code square names, positions by square type, prices, rents, or
-the number of properties in each group.
+The supplied draw.io diagram includes planned Phase 3 classes. See
+[the current Phase 2 diagram](diagram/phase2.md) for implemented classes only.
+The source ZIP had no separate PNG diagram or LMS sample-output file.
 
-## Check-in demonstration
+## AI log and submission responsibilities
 
-Run the valid supplied board, then demonstrate the three required invalid cases:
-
-```text
-java -jar RiyadhPoly.jar tests/fixtures/invalid_missing_field.txt
-java -jar RiyadhPoly.jar tests/fixtures/invalid_unknown_group.txt
-java -jar RiyadhPoly.jar tests/fixtures/invalid_non_numeric_price.txt
-```
-
-These intentionally fail and should print a clear error. The fixtures preserve
-physical line numbers, including the comment line at the top. An error therefore
-reports the actual line in the file, not the square index.
-
-Also run your instructor's separately assigned board file if it differs from the
-file supplied for this project. Automated tests additionally change a board name,
-price and rent to check that the loader uses file contents rather than fixed data.
-
-## Files
-
-- `src/`: 15 Java source files for the Phase 1 application.
-- `board.txt`: the exact board file supplied by the user.
-- `RiyadhPoly.jar`: ready-to-run application.
-- `diagram/`: the supplied whole-project draw.io file and PNG export.
-- `tests/`: acceptance tests and three intentionally invalid board fixtures.
-- `docs/`: captured output and verification results from the actual runs.
-- `run`, `build`, and `test` scripts for Windows and macOS/Linux.
-
-No board data is embedded in the JAR. Keep `board.txt` beside it, or pass another
-file explicitly. After editing Java source, run the build script to update the JAR.
+[docs/AI_USE_LOG.md](docs/AI_USE_LOG.md) records this AI-assisted implementation.
+The group must fill in its actual student names, honestly record its own review,
+changes and learning, and understand the submitted code. No student review or
+learning is claimed by the generated log. LMS submission, the three-person group,
+attendance and individual check-in/viva answers must be completed by the students.
+The code and documentation cannot guarantee marks or satisfy those personal tasks.

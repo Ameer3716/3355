@@ -3,9 +3,9 @@ set -eu
 cd -- "$(dirname -- "$0")"
 mkdir -p build
 if command -v javac >/dev/null 2>&1; then
-    javac -encoding UTF-8 -d build src/*.java
+    javac -source 8 -target 8 -Xlint:-options -encoding UTF-8 -d build src/*.java
 else
-    java -m jdk.compiler/com.sun.tools.javac.Main -encoding UTF-8 -d build src/*.java
+    java -m jdk.compiler/com.sun.tools.javac.Main -source 8 -target 8 -Xlint:-options -encoding UTF-8 -d build src/*.java
 fi
 if command -v jar >/dev/null 2>&1; then
     jar cfe RiyadhPoly.jar RiyadhPolyApp -C build .

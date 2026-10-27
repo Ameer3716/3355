@@ -1,0 +1,7 @@
+Amal landed on Al-Oud (BROWN). Owned by Sara.
+Amal owns the rest of BROWN and buys Al-Oud from Sara for $180.
+Owner of Al-Oud: Amal
+Sara landed on Al-Bathaa (BROWN). Owned by Amal (whole group). Rent: $96.
+Sara paid $96 to Amal.
+Sara's cash: 764
+RentTest passed: $180 buy-out, $96 doubled rent, Sara cash $764.

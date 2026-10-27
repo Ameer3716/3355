@@ -6,12 +6,16 @@ if errorlevel 1 exit /b 1
 if not exist build-tests mkdir build-tests
 where javac >nul 2>nul
 if errorlevel 1 (
-    java -m jdk.compiler/com.sun.tools.javac.Main -encoding UTF-8 -cp build -d build-tests tests\Phase1Tests.java
+    java -m jdk.compiler/com.sun.tools.javac.Main -source 8 -target 8 -Xlint:-options -encoding UTF-8 -cp build -d build-tests tests\*.java
 ) else (
-    javac -encoding UTF-8 -cp build -d build-tests tests\Phase1Tests.java
+    javac -source 8 -target 8 -Xlint:-options -encoding UTF-8 -cp build -d build-tests tests\*.java
 )
 if errorlevel 1 exit /b 1
 java -cp "build;build-tests" Phase1Tests
+if errorlevel 1 exit /b 1
+java -cp "build;build-tests" Phase2Tests
+if errorlevel 1 exit /b 1
+java -cp build RentTest
 set "projectExitCode=%ERRORLEVEL%"
 echo.
 pause
