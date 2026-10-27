@@ -1,0 +1,22 @@
+RiyadhPoly - Phase 1: Design and Board
+Board loaded: 20 squares.
+0: Go
+1: Al-Shemaisy (BROWN) price $100, rent $40
+2: Al-Bathaa (BROWN) price $100, rent $48
+3: Chance
+4: Al-Oud (BROWN) price $120, rent $56
+5: Go To Jail
+6: Al-Tahlia (YELLOW) price $200, rent $100
+7: Central Station (RAILROAD) price $300, rent $100
+8: Olaya (YELLOW) price $220, rent $112
+9: King Fahd (YELLOW) price $250, rent $128
+10: Park
+11: KAFD (GREEN) price $400, rent $200
+12: Al-Nakheel (GREEN) price $450, rent $220
+13: Chance
+14: Al-Aqiq (GREEN) price $500, rent $240
+15: Jail
+16: Kingdom Centre (BLUE) price $650, rent $300
+17: Grand Terminal (RAILROAD) price $300, rent $100
+18: Rafal (BLUE) price $700, rent $320
+19: Diriyah (BLUE) price $800, rent $360

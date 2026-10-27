@@ -1,0 +1,851 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="riyadhpoly-whole-design" name="Whole-project UML">
+    <mxGraphModel dx="5688" dy="3919" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="whole-project-design" connectable="0" parent="1" style="group;transparentBounds=1;labelBackgroundColor=none;groupPadding=0 0 518 0;strokeWidth=3;html=1;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="2964" width="6742" as="geometry" />
+        </mxCell>
+        <mxCell id="class_0" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;RiyadhPolyApp&lt;/b&gt;" vertex="1">
+          <mxGeometry height="148" width="270" x="3204" y="-300" as="geometry" />
+        </mxCell>
+        <mxCell id="class_0_divider" parent="class_0" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="270" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_0_method_0" parent="class_0" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+main(args: String[]) void" vertex="1">
+          <mxGeometry height="26" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;&lt;i&gt;Square&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="302" width="300" x="2733" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_annotation" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«abstract»" vertex="1">
+          <mxGeometry height="22" width="300" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_attribute_0" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-index: int {readOnly}" vertex="1">
+          <mxGeometry height="26" width="300" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_attribute_1" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-name: String {readOnly}" vertex="1">
+          <mxGeometry height="26" width="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_divider" parent="class_1" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="300" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_method_0" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+Square(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="300" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_method_1" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getIndex() int" vertex="1">
+          <mxGeometry height="26" width="300" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_method_2" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getName() String" vertex="1">
+          <mxGeometry height="26" width="300" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_method_3" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+toString() String" vertex="1">
+          <mxGeometry height="26" width="300" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="class_1_method_4" parent="class_1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=2;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="300" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="class_2" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;GoSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="310" x="3473" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="class_2_divider" parent="class_2" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="310" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_2_method_0" parent="class_2" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+GoSquare(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="310" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_2_method_1" parent="class_2" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="310" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_3" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;ChanceSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="360" x="2133" y="2090" as="geometry" />
+        </mxCell>
+        <mxCell id="class_3_divider" parent="class_3" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="360" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_3_method_0" parent="class_3" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+ChanceSquare(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_3_method_1" parent="class_3" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="360" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_4" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;ParkSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="330" x="2563" y="2080" as="geometry" />
+        </mxCell>
+        <mxCell id="class_4_divider" parent="class_4" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="330" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_4_method_0" parent="class_4" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+ParkSquare(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="330" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_4_method_1" parent="class_4" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="330" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_5" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;JailSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="320" x="2943" y="2080" as="geometry" />
+        </mxCell>
+        <mxCell id="class_5_divider" parent="class_5" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="320" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_5_method_0" parent="class_5" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+JailSquare(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="320" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_5_method_1" parent="class_5" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="320" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_6" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;GoToJailSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="370" x="3317" y="2090" as="geometry" />
+        </mxCell>
+        <mxCell id="class_6_divider" parent="class_6" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="370" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_6_method_0" parent="class_6" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+GoToJailSquare(index: int, name: String)" vertex="1">
+          <mxGeometry height="26" width="370" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_6_method_1" parent="class_6" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="370" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;PropertySquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="382" width="650" x="453" y="2240" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_attribute_0" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-price: int" vertex="1">
+          <mxGeometry height="26" width="650" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_attribute_1" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-baseRent: int" vertex="1">
+          <mxGeometry height="26" width="650" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_attribute_2" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-group: String" vertex="1">
+          <mxGeometry height="26" width="650" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_attribute_3" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-owner: Player" vertex="1">
+          <mxGeometry height="26" width="650" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_divider" parent="class_7" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="650" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_0" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+PropertySquare(index: int, name: String, group: String, price: int, baseRent: int)" vertex="1">
+          <mxGeometry height="26" width="650" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_1" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="650" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_2" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getPrice() int" vertex="1">
+          <mxGeometry height="26" width="650" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_3" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getBaseRent() int" vertex="1">
+          <mxGeometry height="26" width="650" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_4" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getGroup() String" vertex="1">
+          <mxGeometry height="26" width="650" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_5" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getOwner() Player" vertex="1">
+          <mxGeometry height="26" width="650" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="class_7_method_6" parent="class_7" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+setOwner(p: Player) void" vertex="1">
+          <mxGeometry height="26" width="650" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;StationSquare&lt;/b&gt;" vertex="1">
+          <mxGeometry height="382" width="640" x="1353" y="2240" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_attribute_0" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-price: int" vertex="1">
+          <mxGeometry height="26" width="640" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_attribute_1" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-baseRent: int" vertex="1">
+          <mxGeometry height="26" width="640" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_attribute_2" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-group: String" vertex="1">
+          <mxGeometry height="26" width="640" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_attribute_3" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-owner: Player" vertex="1">
+          <mxGeometry height="26" width="640" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_divider" parent="class_8" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="640" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_0" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+StationSquare(index: int, name: String, group: String, price: int, baseRent: int)" vertex="1">
+          <mxGeometry height="26" width="640" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_1" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+land(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="640" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_2" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getPrice() int" vertex="1">
+          <mxGeometry height="26" width="640" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_3" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getBaseRent() int" vertex="1">
+          <mxGeometry height="26" width="640" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_4" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getGroup() String" vertex="1">
+          <mxGeometry height="26" width="640" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_5" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getOwner() Player" vertex="1">
+          <mxGeometry height="26" width="640" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="class_8_method_6" parent="class_8" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+setOwner(p: Player) void" vertex="1">
+          <mxGeometry height="26" width="640" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;Ownable&lt;/b&gt;" vertex="1">
+          <mxGeometry height="276" width="250" x="1527" y="1246" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_annotation" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«interface»" vertex="1">
+          <mxGeometry height="22" width="250" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_divider" parent="class_9" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="250" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_method_0" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getPrice() int" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_method_1" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getBaseRent() int" vertex="1">
+          <mxGeometry height="26" width="250" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_method_2" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getGroup() String" vertex="1">
+          <mxGeometry height="26" width="250" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_method_3" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getOwner() Player" vertex="1">
+          <mxGeometry height="26" width="250" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="class_9_method_4" parent="class_9" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+setOwner(p: Player) void" vertex="1">
+          <mxGeometry height="26" width="250" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;ColorGroup&lt;/b&gt;" vertex="1">
+          <mxGeometry height="276" width="200" x="1043" y="866" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_annotation" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«utility»" vertex="1">
+          <mxGeometry height="22" width="200" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_attribute_0" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+BROWN: String" vertex="1">
+          <mxGeometry height="26" width="200" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_attribute_1" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+YELLOW: String" vertex="1">
+          <mxGeometry height="26" width="200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_attribute_2" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+GREEN: String" vertex="1">
+          <mxGeometry height="26" width="200" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_attribute_3" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+BLUE: String" vertex="1">
+          <mxGeometry height="26" width="200" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_attribute_4" parent="class_10" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+RAILROAD: String" vertex="1">
+          <mxGeometry height="26" width="200" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_10_divider" parent="class_10" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="200" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;Board&lt;/b&gt;" vertex="1">
+          <mxGeometry height="434" width="430" x="2693" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_attribute_0" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+BOARD_SIZE: int" vertex="1">
+          <mxGeometry height="26" width="430" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_attribute_1" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+CSV_FIELD_COUNT: int" vertex="1">
+          <mxGeometry height="26" width="430" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_attribute_2" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-squares: ArrayList&amp;lt;Square&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="430" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_attribute_3" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-groups: Map&amp;lt;String, ArrayList&amp;lt;Ownable&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="430" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_divider" parent="class_11" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="430" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_0" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+Board(fileName: String)" vertex="1">
+          <mxGeometry height="26" width="430" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_1" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getSquares() ArrayList&amp;lt;Square&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="430" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_2" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getSquare(index: int) Square" vertex="1">
+          <mxGeometry height="26" width="430" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_3" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+countOwned(p: Player, group: String) int" vertex="1">
+          <mxGeometry height="26" width="430" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_4" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+printBoard() void" vertex="1">
+          <mxGeometry height="26" width="430" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_5" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-loadBoard(fileName: String) void" vertex="1">
+          <mxGeometry height="26" width="430" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_6" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-parseSquare(fields: String[]) Square" vertex="1">
+          <mxGeometry height="26" width="430" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_7" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-validateRecord(fields: String[], lineNumber: int) void" vertex="1">
+          <mxGeometry height="26" width="430" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="class_11_method_8" parent="class_11" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getGroupSize(group: String) int" vertex="1">
+          <mxGeometry height="26" width="430" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="class_12" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;InvalidBoardException&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="500" x="5223" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="class_12_divider" parent="class_12" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="500" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_12_method_0" parent="class_12" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+InvalidBoardException(message: String)" vertex="1">
+          <mxGeometry height="26" width="500" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_12_method_1" parent="class_12" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+InvalidBoardException(lineNumber: int, reason: String)" vertex="1">
+          <mxGeometry height="26" width="500" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_13" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 1" value="&lt;b&gt;Exception&lt;/b&gt;" vertex="1">
+          <mxGeometry height="172" width="210" x="5333" y="-312" as="geometry" />
+        </mxCell>
+        <mxCell id="class_13_annotation" parent="class_13" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«Java standard library»" vertex="1">
+          <mxGeometry height="22" width="210" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_13_divider" parent="class_13" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="210" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2; jail state in 3 | Proposed later-phase design; empty stub in Phase 1." value="&lt;b&gt;&lt;i&gt;Player&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="510" width="290" x="5813" y="722" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_annotation" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«abstract»" vertex="1">
+          <mxGeometry height="22" width="290" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_attribute_0" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-name: String" vertex="1">
+          <mxGeometry height="26" width="290" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_attribute_1" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-cash: int" vertex="1">
+          <mxGeometry height="26" width="290" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_attribute_2" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-position: int" vertex="1">
+          <mxGeometry height="26" width="290" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_attribute_3" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-jailTurns: int" vertex="1">
+          <mxGeometry height="26" width="290" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_attribute_4" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-properties: ArrayList&amp;lt;Ownable&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="290" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_divider" parent="class_14" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="290" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_0" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+Player(name: String)" vertex="1">
+          <mxGeometry height="26" width="290" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_1" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=2;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+wantsToBuy(o: Ownable) boolean" vertex="1">
+          <mxGeometry height="26" width="290" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_2" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getNetWorth() int" vertex="1">
+          <mxGeometry height="26" width="290" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_3" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+compareTo(other: Player) int" vertex="1">
+          <mxGeometry height="26" width="290" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_4" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getName() String" vertex="1">
+          <mxGeometry height="26" width="290" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_5" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getCash() int" vertex="1">
+          <mxGeometry height="26" width="290" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_6" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getPosition() int" vertex="1">
+          <mxGeometry height="26" width="290" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_7" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+adjustCash(amount: int) void" vertex="1">
+          <mxGeometry height="26" width="290" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_8" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+addProperty(o: Ownable) void" vertex="1">
+          <mxGeometry height="26" width="290" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="class_14_method_9" parent="class_14" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+removeProperty(o: Ownable) void" vertex="1">
+          <mxGeometry height="26" width="290" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2 and 3 | Proposed later-phase design; empty stub in Phase 1." value="&lt;b&gt;Game&lt;/b&gt;" vertex="1">
+          <mxGeometry height="642" width="350" x="3878" y="-17" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_0" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+INITIAL_CASH: int = 800" vertex="1">
+          <mxGeometry height="26" width="350" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_1" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+SALARY: int = 100" vertex="1">
+          <mxGeometry height="26" width="350" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_2" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+MAX_ROUNDS: int = 20" vertex="1">
+          <mxGeometry height="26" width="350" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_3" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+PLAYER_COUNT: int = 4" vertex="1">
+          <mxGeometry height="26" width="350" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_4" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+BUYOUT_MULTIPLIER: double = 1.5" vertex="1">
+          <mxGeometry height="26" width="350" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_5" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+FULL_GROUP_RENT_MULTIPLIER: int = 2" vertex="1">
+          <mxGeometry height="26" width="350" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_6" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+JAIL_TURNS: int = 1" vertex="1">
+          <mxGeometry height="26" width="350" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_7" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-board: Board" vertex="1">
+          <mxGeometry height="26" width="350" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_8" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-players: ArrayList&amp;lt;Player&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="350" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_9" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-dice: Dice" vertex="1">
+          <mxGeometry height="26" width="350" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_10" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-chanceDeck: ChanceDeck" vertex="1">
+          <mxGeometry height="26" width="350" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_attribute_11" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-round: int" vertex="1">
+          <mxGeometry height="26" width="350" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_divider" parent="class_15" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="350" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_0" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+Game(fileName: String, seed: long)" vertex="1">
+          <mxGeometry height="26" width="350" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_1" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+play() void" vertex="1">
+          <mxGeometry height="26" width="350" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_2" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+takeTurn(p: Player) void" vertex="1">
+          <mxGeometry height="26" width="350" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_3" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+resolveOwnable(p: Player, o: Ownable) void" vertex="1">
+          <mxGeometry height="26" width="350" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_4" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+movePlayer(p: Player, steps: int) void" vertex="1">
+          <mxGeometry height="26" width="350" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_5" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getChanceDeck() ChanceDeck" vertex="1">
+          <mxGeometry height="26" width="350" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_6" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+sendToJail(p: Player) void" vertex="1">
+          <mxGeometry height="26" width="350" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_7" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+removeBankruptPlayers() void" vertex="1">
+          <mxGeometry height="26" width="350" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="class_15_method_8" parent="class_15" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+printLeaderboard() void" vertex="1">
+          <mxGeometry height="26" width="350" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="class_16" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2" value="&lt;b&gt;CautiousBot&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="280" x="5903" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="class_16_attribute_0" parent="class_16" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+MIN_CASH_RESERVE: int = 300" vertex="1">
+          <mxGeometry height="26" width="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_16_divider" parent="class_16" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="280" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_16_method_0" parent="class_16" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+CautiousBot(name: String)" vertex="1">
+          <mxGeometry height="26" width="280" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_16_method_1" parent="class_16" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+wantsToBuy(o: Ownable) boolean" vertex="1">
+          <mxGeometry height="26" width="280" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_17" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2" value="&lt;b&gt;AggressiveBot&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="280" x="6243" y="1406" as="geometry" />
+        </mxCell>
+        <mxCell id="class_17_divider" parent="class_17" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="280" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_17_method_0" parent="class_17" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+AggressiveBot(name: String)" vertex="1">
+          <mxGeometry height="26" width="280" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_17_method_1" parent="class_17" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+wantsToBuy(o: Ownable) boolean" vertex="1">
+          <mxGeometry height="26" width="280" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2" value="&lt;b&gt;Dice&lt;/b&gt;" vertex="1">
+          <mxGeometry height="226" width="240" x="4353" y="-152" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_attribute_0" parent="class_18" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+DICE_COUNT: int = 2" vertex="1">
+          <mxGeometry height="26" width="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_attribute_1" parent="class_18" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+SIDES: int = 6" vertex="1">
+          <mxGeometry height="26" width="240" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_attribute_2" parent="class_18" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-random: Random" vertex="1">
+          <mxGeometry height="26" width="240" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_divider" parent="class_18" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="240" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_method_0" parent="class_18" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+Dice(seed: long)" vertex="1">
+          <mxGeometry height="26" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="class_18_method_1" parent="class_18" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+roll() int[]" vertex="1">
+          <mxGeometry height="26" width="240" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="class_19" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 3" value="&lt;b&gt;ChanceDeck&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="260" x="4393" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="class_19_attribute_0" parent="class_19" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-cards: ArrayList&amp;lt;ChanceCard&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_19_divider" parent="class_19" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="260" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_19_method_0" parent="class_19" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+ChanceDeck()" vertex="1">
+          <mxGeometry height="26" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_19_method_1" parent="class_19" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+draw() ChanceCard" vertex="1">
+          <mxGeometry height="26" width="260" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 3" value="&lt;b&gt;&lt;i&gt;ChanceCard&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="224" width="260" x="4143" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_annotation" parent="class_20" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«abstract»" vertex="1">
+          <mxGeometry height="22" width="260" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_attribute_0" parent="class_20" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-message: String" vertex="1">
+          <mxGeometry height="26" width="260" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_divider" parent="class_20" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_method_0" parent="class_20" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+ChanceCard(message: String)" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_method_1" parent="class_20" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+getMessage() String" vertex="1">
+          <mxGeometry height="26" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="class_20_method_2" parent="class_20" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=2;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+apply(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="260" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="class_21" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 3" value="&lt;b&gt;MoneyCard&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="340" x="3983" y="2050" as="geometry" />
+        </mxCell>
+        <mxCell id="class_21_attribute_0" parent="class_21" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-amount: int" vertex="1">
+          <mxGeometry height="26" width="340" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_21_divider" parent="class_21" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="340" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_21_method_0" parent="class_21" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+MoneyCard(message: String, amount: int)" vertex="1">
+          <mxGeometry height="26" width="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_21_method_1" parent="class_21" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+apply(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="340" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_22" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 3" value="&lt;b&gt;MoveCard&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="360" x="4405" y="2050" as="geometry" />
+        </mxCell>
+        <mxCell id="class_22_attribute_0" parent="class_22" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="-destination: int" vertex="1">
+          <mxGeometry height="26" width="360" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_22_divider" parent="class_22" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="360" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_22_method_0" parent="class_22" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+MoveCard(message: String, destination: int)" vertex="1">
+          <mxGeometry height="26" width="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_22_method_1" parent="class_22" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+apply(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="360" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_23" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=48;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 3" value="&lt;b&gt;GoToJailCard&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="260" x="4853" y="2050" as="geometry" />
+        </mxCell>
+        <mxCell id="class_23_divider" parent="class_23" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="260" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="class_23_method_0" parent="class_23" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+GoToJailCard(message: String)" vertex="1">
+          <mxGeometry height="26" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_23_method_1" parent="class_23" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+apply(p: Player, g: Game) void" vertex="1">
+          <mxGeometry height="26" width="260" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="class_24" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase Java library; used in 2" value="&lt;b&gt;Comparable&amp;lt;Player&amp;gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="172" width="250" x="5823" y="-312" as="geometry" />
+        </mxCell>
+        <mxCell id="class_24_annotation" parent="class_24" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«interface»" vertex="1">
+          <mxGeometry height="22" width="250" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_24_divider" parent="class_24" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="250" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_24_method_0" parent="class_24" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=2;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+compareTo(other: Player) int" vertex="1">
+          <mxGeometry height="26" width="250" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25" parent="whole-project-design" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;startSize=72;horizontalStack=0;resizeParent=0;resizeLast=0;collapsible=0;whiteSpace=wrap;swimlaneFillColor=#FFFFFF;fontFamily=Recursive;strokeWidth=2;shadow=0;spacingTop=24;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" tooltip="Phase 2" value="&lt;b&gt;RentTest&lt;/b&gt;" vertex="1">
+          <mxGeometry height="224" width="240" x="3973" y="-520" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25_annotation" parent="class_25" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;align=center;spacingLeft=0;spacingRight=0;movable=0;resizable=0;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="«test utility»" vertex="1">
+          <mxGeometry height="22" width="240" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25_divider" parent="class_25" style="line;strokeWidth=2;rotatable=0;points=[];labelBackgroundColor=none;html=1;strokeColor=#000000;fontColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25_method_0" parent="class_25" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+main(args: String[]) void" vertex="1">
+          <mxGeometry height="26" width="240" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25_method_1" parent="class_25" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+testFullGroupRent() void" vertex="1">
+          <mxGeometry height="26" width="240" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="class_25_method_2" parent="class_25" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Recursive;fontSize=14;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;fontStyle=4;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="+testBuyOut() void" vertex="1">
+          <mxGeometry height="26" width="240" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="note_Scope" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="WHOLE-PROJECT DESIGN&lt;br&gt;Phase 1 requires this whole design, while implementation only loads and prints the&lt;br&gt;board. Player and Game are empty stubs in Phase 1.&lt;br&gt;Phase 2: Player, both bots, Dice, game loop, money, leaderboard and RentTest.&lt;br&gt;Phase 3: ChanceDeck / cards, jail, bankruptcy and final standings.&lt;br&gt;Later-phase members are a proposed design from the overview; exact signatures may&lt;br&gt;change with the detailed Phase 2/3 briefs." vertex="1">
+          <mxGeometry height="179" width="650" x="3014" y="-614" as="geometry" />
+        </mxCell>
+        <mxCell id="note_BoardRules" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="BOARD FILE AND VALIDATION - PHASE 1&lt;br&gt;Read 20 ordered squares from board.txt:&lt;br&gt;index,type,name,group,price,rent. Ignore # comments; preserve&lt;br&gt;trailing empty fields with split(&quot;,&quot;, -1). Do not hard-code square&lt;br&gt;data.&lt;br&gt;Build Map&amp;lt;String, ArrayList&amp;lt;Ownable&amp;gt;&amp;gt; as records load. countOwned&lt;br&gt;returns 0 for non-null players while all owners are null." vertex="1">
+          <mxGeometry height="179" width="520" x="3293" y="1501.5" as="geometry" />
+        </mxCell>
+        <mxCell id="note_FileErrors" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="CHECKED EXCEPTION&lt;br&gt;Missing file or invalid record: print a clear error and stop. Include&lt;br&gt;actual file line number and reason for malformed records; wrap&lt;br&gt;NumberFormatException." vertex="1">
+          <mxGeometry height="116" width="520" x="5227" y="1861" as="geometry" />
+        </mxCell>
+        <mxCell id="note_Constants" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="CONSTANTS&lt;br&gt;All five ColorGroup strings, BOARD_SIZE = 20, CSV_FIELD_COUNT = 6&lt;br&gt;and every fixed game number are static final. Underlined members&lt;br&gt;are static; italic operations are abstract." vertex="1">
+          <mxGeometry height="116" width="520" x="-97" y="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="note_PlayerRules" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="BOT RULES AND LEADERBOARD&lt;br&gt;CautiousBot buys only if at least $300 remains after purchase.&lt;br&gt;AggressiveBot buys whenever it can afford the square. Both override&lt;br&gt;wantsToBuy(Ownable).&lt;br&gt;Player implements Comparable&amp;lt;Player&amp;gt; using net worth: cash plus&lt;br&gt;purchase value of owned squares. Sort for the displayed leaderboard&lt;br&gt;without changing turn order." vertex="1">
+          <mxGeometry height="179" width="520" x="6603" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="note_GameRules" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="MONEY, JAIL AND BANKRUPTCY&lt;br&gt;Whole-group ownership doubles base rent. Owning all but one square&lt;br&gt;permits a 1.5 x price buy-out of the last square from its owner.&lt;br&gt;Update both owners&#39; property lists.&lt;br&gt;Jail skips one turn. Remove players whose cash is below 0 using&lt;br&gt;Iterator&amp;lt;Player&amp;gt;.remove(); return their squares to the bank. After&lt;br&gt;20 rounds, highest net worth wins." vertex="1">
+          <mxGeometry height="179" width="520" x="3443" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="note_InputRules" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="INPUT AND POLYMORPHISM&lt;br&gt;Use Scanner to validate the optional seed, four names, and C/A bot&lt;br&gt;choices. Seed Dice for repeatable rolls.&lt;br&gt;Game code calls Square.land(player, game),&lt;br&gt;Player.wantsToBuy(ownable) and ChanceCard.apply(player, game)&lt;br&gt;through their abstract parent types." vertex="1">
+          <mxGeometry height="158" width="520" x="2463" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="note_DeckRules" parent="whole-project-design" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;spacingTop=12;spacingBottom=12;fontFamily=Recursive;fontSize=14;labelBackgroundColor=none;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" value="SHARED CHANCE DECK - PHASE 3&lt;br&gt;Store cards in ArrayList&amp;lt;ChanceCard&amp;gt;. Drawing cycles the first card&lt;br&gt;to the end of the list. MoneyCard adds or deducts money; MoveCard&lt;br&gt;moves; GoToJailCard sends the player to jail.&lt;br&gt;ChanceSquare draws from Game&#39;s shared deck. Player and Game in&lt;br&gt;card signatures are parent types, not specific subclasses." vertex="1">
+          <mxGeometry height="158" width="520" x="4459" y="1401" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=1;exitY=0.913907;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_2" value="">
+          <mxGeometry relative="1" x="-0.26055" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0;exitY=0.983444;exitPerimeter=0;entryX=0.825;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_3" value="">
+          <mxGeometry relative="1" x="-0.287349" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0;exitY=0.990066;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_4" value="">
+          <mxGeometry relative="1" x="-0.471079" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;entryX=0.5;entryY=0;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_5" value="">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint x="2963" y="1750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="whole-project-design" source="class_1" style="rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=1;exitY=0.956954;exitPerimeter=0;entryX=0.0310811;entryY=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_6" value="">
+          <mxGeometry relative="1" x="0.260195" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0;exitY=0.966887;exitPerimeter=0;entryX=0.666615;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_7" value="">
+          <mxGeometry relative="1" x="-0.0568086" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" edge="1" parent="whole-project-design" source="class_1" style="rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0;exitY=0.97351;exitPerimeter=0;entryX=0.754687;entryY=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_8" value="">
+          <mxGeometry relative="1" x="-0.0932721" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" edge="1" parent="whole-project-design" source="class_9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;dashed=1;exitX=0;exitY=0.5;exitPerimeter=0;entryX=0.333338;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_7" value="">
+          <mxGeometry relative="1" x="-0.407" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" edge="1" parent="whole-project-design" source="class_9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;dashed=1;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.314063;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_8" value="">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" edge="1" parent="whole-project-design" source="class_13" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_12" value="">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_10" edge="1" parent="whole-project-design" source="class_24" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;dashed=1;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_11" edge="1" parent="whole-project-design" source="class_14" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0.75;exitY=1;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" value="">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint x="6033" y="1250" as="sourcePoint" />
+            <mxPoint x="6033" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_12" edge="1" parent="whole-project-design" source="class_14_method_3" style="rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;entryX=0.210714;entryY=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_17" value="">
+          <mxGeometry relative="1" x="-0.0108" y="-10" as="geometry">
+            <mxPoint x="6113" y="1240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_13" edge="1" parent="whole-project-design" source="class_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;entryX=0.5;entryY=0;entryPerimeter=0;exitX=0;exitY=1;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_21" value="">
+          <mxGeometry relative="1" x="0.0558" y="-10" as="geometry">
+            <mxPoint x="4153" y="1610" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_14" edge="1" parent="whole-project-design" source="class_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=0.75;exitY=1;entryX=0.5;entryY=0;entryPerimeter=0;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_22" value="">
+          <mxGeometry relative="1" x="-0.4241" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_15" edge="1" parent="whole-project-design" source="class_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=block;startSize=12;startFill=0;endArrow=none;exitX=1;exitY=0.933036;exitPerimeter=0;entryX=0.126923;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_23" value="">
+          <mxGeometry relative="1" x="-0.2746" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_16" edge="1" parent="whole-project-design" source="class_15" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;exitX=0.202857;exitY=1;exitPerimeter=0;entryX=1;entryY=0.0806452;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_11" value="board">
+          <mxGeometry relative="1" x="0.218039" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="3949" y="795" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_16_source_multiplicity" connectable="0" parent="edge_16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_16_target_multiplicity" connectable="0" parent="edge_16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_17" edge="1" parent="whole-project-design" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;entryX=0;entryY=0.0372549;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="players">
+          <mxGeometry relative="1" x="0.2254" y="-10" as="geometry">
+            <mxPoint x="4233" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_17_source_multiplicity" connectable="0" parent="edge_17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.5988" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_17_target_multiplicity" connectable="0" parent="edge_17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="0..4" vertex="1">
+          <mxGeometry relative="1" x="0.9329" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="CzcPdzQRHHGD_Lc-wHE9-8" connectable="0" parent="edge_17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="Text" vertex="1">
+          <mxGeometry relative="1" x="-0.2092" y="11" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_18" edge="1" parent="whole-project-design" source="class_15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;exitX=1;exitY=0.75;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_18_attribute_1" value="dice">
+          <mxGeometry relative="1" x="0.7525" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="4689" y="464.5" />
+              <mxPoint x="4689" y="-53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_18_source_multiplicity" connectable="0" parent="edge_18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9162" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_18_target_multiplicity" connectable="0" parent="edge_18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9333" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_19" edge="1" parent="whole-project-design" source="class_15" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;exitX=0.822286;exitY=1;exitPerimeter=0;entryX=0.08;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_19" value="chanceDeck">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_19_source_multiplicity" connectable="0" parent="edge_19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_19_target_multiplicity" connectable="0" parent="edge_19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_20" edge="1" parent="whole-project-design" source="class_11" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;exitX=0.448837;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_1" value="ordered squares">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_20_source_multiplicity" connectable="0" parent="edge_20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_20_target_multiplicity" connectable="0" parent="edge_20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="20" vertex="1">
+          <mxGeometry relative="1" x="0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_21" edge="1" parent="whole-project-design" source="class_19" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=diamond;startSize=12;startFill=1;endArrow=none;exitX=0.666538;exitY=1;exitPerimeter=0;entryX=0.666538;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_20" value="cards">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_21_source_multiplicity" connectable="0" parent="edge_21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_21_target_multiplicity" connectable="0" parent="edge_21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_22" edge="1" parent="whole-project-design" source="class_9" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;startArrow=none;endArrow=none;exitX=0.5;exitY=0;exitPerimeter=0;entryX=0;entryY=0.962745;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="owner; null = bank">
+          <mxGeometry relative="1" x="0.0304846" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="1652" y="1213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_22_source_multiplicity" connectable="0" parent="edge_22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_22_target_multiplicity" connectable="0" parent="edge_22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.92" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_23" edge="1" parent="whole-project-design" source="class_11_method_7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_9" value="groups / countOwned">
+          <mxGeometry relative="1" x="0.199" y="-10" as="geometry">
+            <mxPoint x="2683" y="1140" as="sourcePoint" />
+            <mxPoint x="1777" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CzcPdzQRHHGD_Lc-wHE9-2" connectable="0" parent="edge_23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelPadding;fontFamily=Recursive;fontSize=12;labelBackgroundColor=none;fontColor=#000000;fillColor=none;strokeColor=none;" value="Text" vertex="1">
+          <mxGeometry relative="1" x="-0.6733" y="10" as="geometry">
+            <mxPoint x="10" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_24" edge="1" parent="whole-project-design" source="class_11_method_3" style="rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_10_attribute_2" value="validates groups">
+          <mxGeometry relative="1" x="0.0817" y="-10" as="geometry">
+            <mxPoint x="3139.9999999999995" y="1017.8464713165495" as="sourcePoint" />
+            <mxPoint x="923" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_25" edge="1" parent="whole-project-design" source="class_11" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=1;exitY=0.919355;exitPerimeter=0;entryX=0.0966;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_12" value="throws">
+          <mxGeometry relative="1" x="-0.118358" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="5081.3" y="1159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_26" edge="1" parent="whole-project-design" source="class_11" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=1;exitY=0.158986;exitPerimeter=0;entryX=0;entryY=0.209804;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="countOwned argument">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_27" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=1;exitY=0.0860927;exitPerimeter=0;entryX=0.101724;entryY=1;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="land argument">
+          <mxGeometry relative="1" x="-0.0463459" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="3033" y="1310" />
+              <mxPoint x="5842.5" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_28" edge="1" parent="whole-project-design" source="class_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=1;exitY=0.0430464;exitPerimeter=0;entryX=0.628571;entryY=1;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_15" value="land argument">
+          <mxGeometry relative="1" x="-0.4591" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_29" edge="1" parent="whole-project-design" source="class_3" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0.325;exitY=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_19" value="draws a shared card">
+          <mxGeometry relative="1" x="0.1175" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="2262" y="1280" />
+              <mxPoint x="4231.7" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_30" edge="1" parent="whole-project-design" source="class_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=1;exitY=0.0491071;exitPerimeter=0;entryX=0.203448;entryY=1;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_14" value="apply argument">
+          <mxGeometry relative="1" x="-0.1227" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_31" edge="1" parent="whole-project-design" source="class_20" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0;exitY=0.5;exitPerimeter=0;entryX=0.705714;entryY=1;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_15" value="apply argument">
+          <mxGeometry relative="1" x="0.0224179" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="4125" y="1480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_32" edge="1" parent="whole-project-design" source="class_0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0;exitY=1;entryX=0.903488;entryY=0;entryPerimeter=0;exitDx=0;exitDy=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_11" value="loads and prints">
+          <mxGeometry relative="1" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_33" edge="1" parent="whole-project-design" source="class_0" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0.834444;exitY=1;exitPerimeter=0;entryX=0;entryY=0.188474;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_15" value="starts game in Phase 2">
+          <mxGeometry relative="1" x="0.363029" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="3429.3" y="104" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_34" edge="1" parent="whole-project-design" source="class_0" style="edgeStyle=none;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;exitX=0.669259;exitY=1;exitPerimeter=0;entryX=0.1934;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_12" value="catches and reports">
+          <mxGeometry relative="1" x="0.2522" y="-10" as="geometry">
+            <Array as="points">
+              <mxPoint x="3384.7" y="1125" />
+              <mxPoint x="5319.7" y="1125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_35" edge="1" parent="whole-project-design" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=3;fontColor=#000000;fontFamily=Recursive;fontSize=12;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=10;dashed=1;dashPattern=6 4;startArrow=none;endArrow=open;endSize=9;endFill=0;entryX=0.5;entryY=0;entryPerimeter=0;curved=0;strokeColor=light-dark(#000000,#121212);" target="class_15" value="buy-out and rent tests">
+          <mxGeometry relative="1" x="-0.245491" y="-10" as="geometry">
+            <mxPoint x="4043" y="-290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_link_1" edge="1" parent="whole-project-design" source="class_11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_BoardRules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note_link_2" edge="1" parent="whole-project-design" source="class_12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_FileErrors" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note_link_3" edge="1" parent="whole-project-design" source="class_10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_Constants" value="">
+          <mxGeometry relative="1" x="-0.0076" as="geometry">
+            <Array as="points">
+              <mxPoint x="433" y="1016" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_link_4" edge="1" parent="whole-project-design" source="class_14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_PlayerRules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note_link_5" edge="1" parent="whole-project-design" source="class_15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_GameRules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note_link_6" edge="1" parent="whole-project-design" source="class_0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_InputRules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note_link_7" edge="1" parent="whole-project-design" source="class_19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeWidth=3;curved=0;html=1;strokeColor=light-dark(#000000,#121212);" target="note_DeckRules" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

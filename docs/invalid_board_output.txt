@@ -1,0 +1,11 @@
+$ java -jar RiyadhPoly.jar tests/fixtures/invalid_missing_field.txt
+Error loading tests/fixtures/invalid_missing_field.txt: line 3: expected 6 fields but found 5
+Exit code: 1
+
+$ java -jar RiyadhPoly.jar tests/fixtures/invalid_unknown_group.txt
+Error loading tests/fixtures/invalid_unknown_group.txt: line 8: unknown group "WHITE"
+Exit code: 1
+
+$ java -jar RiyadhPoly.jar tests/fixtures/invalid_non_numeric_price.txt
+Error loading tests/fixtures/invalid_non_numeric_price.txt: line 13: price "four hundred" is not a valid integer
+Exit code: 1

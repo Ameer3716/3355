@@ -1,0 +1,35 @@
+PASS: loads exactly 20 squares
+PASS: preserves indexes 0 through 19 in order
+PASS: creates GoSquare
+PASS: creates ChanceSquare
+PASS: creates ParkSquare
+PASS: creates JailSquare
+PASS: creates GoToJailSquare
+PASS: creates PropertySquare implementing Ownable
+PASS: creates StationSquare implementing Ownable
+PASS: reads the supplied Olaya data
+PASS: builds all five group lists
+PASS: countOwned is initially 0 for BROWN
+PASS: countOwned is initially 0 for YELLOW
+PASS: countOwned is initially 0 for GREEN
+PASS: countOwned is initially 0 for BLUE
+PASS: countOwned is initially 0 for RAILROAD
+PASS: null is not counted as a player
+PASS: countOwned uses the group map and current owners
+PASS: countOwned distinguishes two different players
+PASS: getSquares cannot remove squares from the board
+PASS: printBoard prints 20 lines including price and rent
+PASS: land dispatches through Square for every board square
+PASS: rejects tests/fixtures/invalid_missing_field.txt
+PASS: rejects tests/fixtures/invalid_unknown_group.txt
+PASS: rejects tests/fixtures/invalid_non_numeric_price.txt
+PASS: wraps NumberFormatException as a checked exception
+PASS: rejects /tmp/riyadhpoly-missing-16507807142916144275/missing-board.txt
+PASS: uses changed file names, prices and rents without hard-coding
+PASS: rejects /tmp/riyadhpoly-invalid-16148586940329570753.txt
+PASS: rejects /tmp/riyadhpoly-invalid-17387590523598765547.txt
+PASS: rejects /tmp/riyadhpoly-invalid-10677981744333972403.txt
+PASS: rejects /tmp/riyadhpoly-invalid-13237245019263648592.txt
+PASS: rejects /tmp/riyadhpoly-invalid-16623749002192364906.txt
+
+All 33 acceptance checks passed.

@@ -1,0 +1,11 @@
+Verified 2026-10-22
+
+Built with OpenJDK 17.0.20, using --release 8.
+The application JAR contains 15 Java 8-compatible class files.
+Runtime and acceptance checks executed on OpenJDK 17.0.20.
+All 33 acceptance checks passed.
+The supplied board.txt is byte-for-byte unchanged.
+The CLI prints all 20 squares and exits with code 0 for the valid board.
+All three required invalid fixtures produce a clear error, no stack trace, and exit code 1.
+The Unix build/test scripts were executed successfully.
+Windows batch scripts were inspected; no Windows runtime was available here.
