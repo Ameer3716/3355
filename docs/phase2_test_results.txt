@@ -25,13 +25,13 @@ PASS: rejects tests/fixtures/invalid_missing_field.txt
 PASS: rejects tests/fixtures/invalid_unknown_group.txt
 PASS: rejects tests/fixtures/invalid_non_numeric_price.txt
 PASS: wraps NumberFormatException as a checked exception
-PASS: rejects /tmp/riyadhpoly-missing-14816895342199038718/missing-board.txt
+PASS: rejects /tmp/riyadhpoly-missing-17202134228475263106/missing-board.txt
 PASS: uses changed file names, prices and rents without hard-coding
-PASS: rejects /tmp/riyadhpoly-invalid-1231755733042496109.txt
-PASS: rejects /tmp/riyadhpoly-invalid-6138476454255716760.txt
-PASS: rejects /tmp/riyadhpoly-invalid-445334246189901954.txt
-PASS: rejects /tmp/riyadhpoly-invalid-3504266250414415284.txt
-PASS: rejects /tmp/riyadhpoly-invalid-12222882650924966094.txt
+PASS: rejects /tmp/riyadhpoly-invalid-5795379648703176106.txt
+PASS: rejects /tmp/riyadhpoly-invalid-948679526279272204.txt
+PASS: rejects /tmp/riyadhpoly-invalid-12763814556755142007.txt
+PASS: rejects /tmp/riyadhpoly-invalid-9621609352890207802.txt
+PASS: rejects /tmp/riyadhpoly-invalid-4049388982131762479.txt
 
 All 33 acceptance checks passed.
 PASS: cautious refuses below $300 reserve
@@ -102,7 +102,26 @@ PASS: leaderboard never reorders turn list
 PASS: invalid seed, overflow, blank name and bot type re-prompt safely
 PASS: empty seed accepts random mode
 PASS: EOF cancels without crashing or looping
-All 31 Phase 2 checks passed.
+PASS: odd-price buy-out rejects $181 for AggressiveBot
+PASS: odd-price buy-out pays exact $181.50 from $181.5 for AggressiveBot
+PASS: odd-price buy-out pays exact $181.50 from $182.0 for AggressiveBot
+PASS: odd-price buy-out rejects $181 for CautiousBot
+PASS: odd-price buy-out pays exact $181.50 from $181.5 for CautiousBot
+PASS: odd-price buy-out pays exact $181.50 from $182.0 for CautiousBot
+Buyer landed on Grand Terminal (RAILROAD). Owned by Seller.
+Buyer owns the rest of RAILROAD and buys Grand Terminal from Seller for $451.50.
+PASS: odd-price station buy-out pays exact $451.50
+PASS: fractional cash survives later ownership transfers
+PASS: leaderboard comparison preserves half-dollar differences
+PASS: leaderboard displays fractional cash and net worth
+PASS: money formatting preserves whole-dollar samples and negative halves
+Visitor landed on Al-Oud (BROWN). Owned by Owner (whole group). Rent: $3000000000.
+Visitor paid $3000000000 to Owner.
+PASS: doubled rent does not overflow a 32-bit integer
+PASS: invalid payment rejected without mutation: NaN
+PASS: invalid payment rejected without mutation: Infinity
+PASS: invalid payment rejected without mutation: -0.5
+All 46 Phase 2 checks passed.
 Amal landed on Al-Oud (BROWN). Owned by Sara.
 Amal owns the rest of BROWN and buys Al-Oud from Sara for $180.
 Owner of Al-Oud: Amal
@@ -116,4 +135,5 @@ PASS: packaged JAR recovers from invalid input and completes the game
 PASS: packaged JAR rejects all three malformed boards with exit status 1
 PASS: packaged JAR handles end of input
 PASS: changing only NUM_PLAYERS to 2 gives 20 rounds and 40 turns
-All 5 CLI checks passed.
+PASS: odd-priced alternate board completes reproducibly and ignores display locale
+All 6 CLI checks passed.

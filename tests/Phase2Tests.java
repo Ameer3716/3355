@@ -14,7 +14,7 @@ public class Phase2Tests {
         passed++;
         System.out.println("PASS: " + description);
     }
-    private static Player cash(Player player, int amount) {
+    private static Player cash(Player player, double amount) {
         player.addCash(amount - player.getCash());
         return player;
     }
@@ -191,7 +191,89 @@ public class Phase2Tests {
             if (eof.startup(new Scanner("42\nName\n"))) { throw new AssertionError("EOF accepted"); }
         });
         check("EOF cancels without crashing or looping", eofOutput.contains("game cancelled"));
+        testFractionalBuyouts();
         System.out.println("All " + passed + " Phase 2 checks passed.");
+    }
+    private static void testFractionalBuyouts() throws Exception {
+        java.nio.file.Path boardFile = java.nio.file.Files.createTempFile("riyadhpoly-odd-", ".txt");
+        try {
+            String board = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get("board.txt")),
+                    java.nio.charset.StandardCharsets.UTF_8);
+            board = board.replace("4,PROPERTY,Al-Oud,BROWN,120,56", "4,PROPERTY,Al-Oud,BROWN,121,56")
+                    .replace("17,STATION,Grand Terminal,RAILROAD,300,100",
+                            "17,STATION,Grand Terminal,RAILROAD,301,100");
+            java.nio.file.Files.write(boardFile, board.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+            for (boolean cautious : new boolean[] {false, true}) {
+                for (double funds : new double[] {181, 181.5, 182}) {
+                    Game game = new Game(boardFile.toString(), 42);
+                    Player buyer = cash(cautious ? new CautiousBot("Buyer") : new AggressiveBot("Buyer"), funds);
+                    Player seller = new AggressiveBot("Seller");
+                    game.transfer(game.getBoard().getOwnable(1), null, buyer, 0);
+                    game.transfer(game.getBoard().getOwnable(2), null, buyer, 0);
+                    Ownable last = game.getBoard().getOwnable(4);
+                    game.transfer(last, null, seller, 121);
+                    String output = capture(() -> game.landOnOwnable(last, buyer));
+                    if (funds < 181.5) {
+                        check("odd-price buy-out rejects $181 for " + buyer.getClass().getSimpleName(),
+                                last.getOwner() == seller && buyer.getCash() == 125 && seller.getCash() == 735
+                                && !buyer.getOwnedSquares().contains(last) && seller.getOwnedSquares().contains(last));
+                    } else {
+                        check("odd-price buy-out pays exact $181.50 from $" + funds + " for " + buyer.getClass().getSimpleName(),
+                                last.getOwner() == buyer && buyer.getCash() == funds - 181.5 && seller.getCash() == 860.5
+                                && buyer.getOwnedSquares().contains(last) && seller.getOwnedSquares().isEmpty()
+                                && buyer.getNetWorth() == funds - 181.5 + 321 && output.contains("$181.50"));
+                    }
+                }
+            }
+            Game game = new Game(boardFile.toString(), 42);
+            Player buyer = cash(new CautiousBot("Buyer"), 451.5);
+            Player seller = new AggressiveBot("Seller");
+            game.transfer(game.getBoard().getOwnable(7), null, buyer, 0);
+            Ownable terminal = game.getBoard().getOwnable(17);
+            game.transfer(terminal, null, seller, 301);
+            game.landOnOwnable(terminal, buyer);
+            check("odd-price station buy-out pays exact $451.50", buyer.getCash() == 0
+                    && seller.getCash() == 950.5 && terminal.getOwner() == buyer);
+            Player laterBuyer = cash(new AggressiveBot("Later"), 452);
+            // Transfer a half-dollar balance through another buy-out-sized payment.
+            game.transfer(terminal, buyer, laterBuyer, 451.5);
+            check("fractional cash survives later ownership transfers", laterBuyer.getCash() == 0.5
+                    && buyer.getCash() == 451.5 && laterBuyer.getNetWorth() == 301.5);
+            Player lower = cash(new AggressiveBot("A"), 300);
+            Player higher = cash(new AggressiveBot("Z"), 300.5);
+            check("leaderboard comparison preserves half-dollar differences", higher.compareTo(lower) < 0);
+            String leaderboard = capture(() -> {
+                if (!game.startup(new Scanner(inputs("42")))) { throw new AssertionError("startup"); }
+                Player player = game.getPlayers().get(0);
+                player.addCash(-499.5);
+                game.printLeaderboard(1);
+            });
+            check("leaderboard displays fractional cash and net worth", leaderboard.contains("cash $300.50   net worth $300.50"));
+            check("money formatting preserves whole-dollar samples and negative halves",
+                    "800".equals(Money.format(800)) && "0.50".equals(Money.format(0.5))
+                    && "-0.50".equals(Money.format(-0.5)));
+            // Board accepts any nonnegative int rent; double it without int overflow.
+            java.nio.file.Files.write(boardFile, board.replace("121,56", "121,1500000000")
+                    .getBytes(java.nio.charset.StandardCharsets.UTF_8));
+            Game largeRent = new Game(boardFile.toString(), 42);
+            Player owner = new AggressiveBot("Owner"), visitor = new AggressiveBot("Visitor");
+            for (int index : new int[] {1, 2, 4}) {
+                largeRent.transfer(largeRent.getBoard().getOwnable(index), null, owner, 0);
+            }
+            largeRent.landOnOwnable(largeRent.getBoard().getOwnable(4), visitor);
+            check("doubled rent does not overflow a 32-bit integer", visitor.getCash() == -2999999200.0
+                    && owner.getCash() == 3000000800.0);
+            for (double invalid : new double[] {Double.NaN, Double.POSITIVE_INFINITY, -0.5}) {
+                double before = visitor.getCash();
+                try {
+                    largeRent.transfer(largeRent.getBoard().getOwnable(4), owner, visitor, invalid);
+                    throw new AssertionError("invalid payment accepted");
+                } catch (IllegalArgumentException expected) {
+                    check("invalid payment rejected without mutation: " + invalid,
+                            visitor.getCash() == before && largeRent.getBoard().getOwnable(4).getOwner() == owner);
+                }
+            }
+        } finally { java.nio.file.Files.deleteIfExists(boardFile); }
     }
     private static Square brownAsSquare(Game game, int index) { return game.getBoard().getSquare(index); }
     private static void checkStartup(Game game, String text) {

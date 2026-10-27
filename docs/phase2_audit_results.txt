@@ -1,0 +1,15 @@
+SUPPLIED BOARD
+PASS: independent Python rules model matched positions, cash, net worth and owners after 10240 turns across 128 seeded games and all 16 bot-type combinations.
+Observed events: {'purchase': 1448, 'salary': 3456, 'declined': 1712, 'base rent': 2398, 'own square': 798, 'buyout': 190, 'double rent': 606}
+ODD: price=121, exact buyout=181.5, buyer cash=181
+Buyer landed on Al-Oud (BROWN). Owned by Seller. Rent: $56.
+Buyer paid $56 to Seller.
+ODD actual owner=Seller, buyer cash=125.0, seller cash=735.0
+
+ALL-ODD-PRICED CUSTOM BOARD
+PASS: independent Python rules model matched positions, cash, net worth and owners after 10240 turns across 128 seeded games and all 16 bot-type combinations.
+Observed events: {'purchase': 1435, 'salary': 3456, 'declined': 1733, 'base rent': 2430, 'own square': 773, 'buyout': 182, 'double rent': 599}
+ODD: price=121, exact buyout=181.5, buyer cash=181
+Buyer landed on Al-Oud (BROWN). Owned by Seller. Rent: $56.
+Buyer paid $56 to Seller.
+ODD actual owner=Seller, buyer cash=125.0, seller cash=735.0

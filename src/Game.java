@@ -108,13 +108,13 @@ public class Game {
         for (int i = 0; i < standings.size(); i++) {
             Player player = standings.get(i);
             System.out.println((i + 1) + ". " + player.getName() + "    cash $"
-                    + player.getCash() + "   net worth $" + player.getNetWorth());
+                    + Money.format(player.getCash()) + "   net worth $" + Money.format(player.getNetWorth()));
         }
     }
 
     /** The only game operation that changes ownership, for purchases and buy-outs. */
-    public void transfer(Ownable square, Player from, Player to, int price) {
-        if (to == null || to == from || square.getOwner() != from || price < 0
+    public void transfer(Ownable square, Player from, Player to, double price) {
+        if (to == null || to == from || square.getOwner() != from || !Double.isFinite(price) || price < 0
                 || to.getCash() < price) {
             throw new IllegalArgumentException("Invalid or unaffordable ownership transfer.");
         }
@@ -145,20 +145,20 @@ public class Game {
         } else if (owner == player) {
             System.out.println(landing + "Already owned by you.");
         } else {
-            int buyoutPrice = (int) (square.getPrice() * BUYOUT_FACTOR);
+            double buyoutPrice = square.getPrice() * BUYOUT_FACTOR;
             if (completesGroup && player.getCash() >= buyoutPrice) {
                 System.out.println(landing + "Owned by " + owner.getName() + ".");
                 transfer(square, owner, player, buyoutPrice);
                 System.out.println(player.getName() + " owns the rest of " + group + " and buys "
-                        + name + " from " + owner.getName() + " for $" + buyoutPrice + ".");
+                        + name + " from " + owner.getName() + " for $" + Money.format(buyoutPrice) + ".");
             } else {
                 boolean fullGroup = board.countOwned(owner, group) == board.getGroupSize(group);
-                int rent = square.getBaseRent() * (fullGroup ? FULL_GROUP_RENT_FACTOR : 1);
+                double rent = (double) square.getBaseRent() * (fullGroup ? FULL_GROUP_RENT_FACTOR : 1);
                 System.out.println(landing + "Owned by " + owner.getName()
-                        + (fullGroup ? " (whole group)" : "") + ". Rent: $" + rent + ".");
+                        + (fullGroup ? " (whole group)" : "") + ". Rent: $" + Money.format(rent) + ".");
                 player.addCash(-rent);
                 owner.addCash(rent);
-                System.out.println(player.getName() + " paid $" + rent + " to " + owner.getName() + ".");
+                System.out.println(player.getName() + " paid $" + Money.format(rent) + " to " + owner.getName() + ".");
             }
         }
     }

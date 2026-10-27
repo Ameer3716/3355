@@ -27,6 +27,7 @@ classDiagram
     Board --> ColorGroup
     Board --> InvalidBoardException : throws
     RiyadhPolyApp --> Game
+    Game --> Money : formats dollar amounts
     RentTest --> Game
     class Square {
         <<abstract>>
@@ -46,12 +47,12 @@ classDiagram
     class Player {
         <<abstract>>
         -String name
-        -int cash
+        -double cash
         -int position
         -int turnsInJail
         -ArrayList ownedSquares
         +wantsToBuy(Ownable)* boolean
-        +getNetWorth() int
+        +getNetWorth() double
         +compareTo(Player) int
     }
     class Game {
@@ -63,6 +64,6 @@ classDiagram
         +play() void
         +printLeaderboard(int) void
         +landOnOwnable(Ownable, Player) void
-        +transfer(Ownable, Player, Player, int) void
+        +transfer(Ownable, Player, Player, double) void
     }
 ```

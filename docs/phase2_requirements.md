@@ -32,7 +32,10 @@ supersedes the overview's final-game behavior for Chance, jail and bankruptcy.
 | Standalone RentTest main | `src/RentTest.java`: owner Amal; $180 buy-out; $96 rent; Sara $764 |
 | Changing only NUM_PLAYERS to 2 works | `tests/verify_cli.py` changes a temporary source copy and runs full game |
 | Sample messages and money | Overview-style turns, buying, rent, buy-out and leaderboard; captured run. Separate LMS sample was not supplied |
-| AI-use log and explainable code | `AI_USE_LOG.md` and `phase2_check_in.md`; student review/understanding remains required |
+| Explainable code | `phase2_check_in.md`; student review/understanding remains required |
+| Overview final-submission AI-use log | Not included, at the user's explicit request; this final-submission requirement is unmet |
+| Exact odd-price buy-outs | $121 costs $181.50; $181 cannot buy out; tested for both bots, fractional later transfers, station buy-out, sorting and display |
+| Large rents accepted by board loader | Doubled $1,500,000,000 rent is $3,000,000,000 without integer overflow |
 
 ## Not part of Phase 2
 

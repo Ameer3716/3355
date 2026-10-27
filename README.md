@@ -74,9 +74,11 @@ bankruptcy elimination or final winner is implemented: the phase brief assigns
 these to Phase 3. Negative cash is allowed and every player keeps taking turns for
 all 20 rounds in this phase.
 
-All supplied board prices are even, so buy-out amounts are exact integers. For an
-alternate board with odd prices, the integer-cash implementation truncates a half
-dollar buy-out down; the brief does not specify fractional-dollar rounding.
+Cash and net worth retain half-dollar amounts exactly, so an odd-priced property
+such as $121 costs exactly $181.50 to buy out. A player with $181 pays rent instead.
+Fractional money displays two decimal places; whole-dollar output retains the
+sample format. Rent doubling uses arithmetic that also supports large board rents
+without 32-bit integer overflow.
 
 ## Check-in and evidence
 
@@ -87,10 +89,11 @@ dollar buy-out down; the brief does not specify fractional-dollar rounding.
 3. Read [the requirement checklist](docs/phase2_requirements.md) and
    [the code explanation](docs/phase2_check_in.md) before the check-in.
 
-`sh test.sh` runs 33 Phase 1 regression checks, 31 Phase 2 checks and RentTest.
-The five extra CLI checks run the packaged JAR twice, check all 80 turns and their
+`sh test.sh` runs 33 Phase 1 regression checks, 46 Phase 2 checks and RentTest.
+The six extra CLI checks run the packaged JAR twice, check all 80 turns and their
 order, exercise invalid input and board failures, and compile a temporary version
-with ONLY `NUM_PLAYERS` changed to 2 to verify all 40 turns. They leave source intact.
+with ONLY `NUM_PLAYERS` changed to 2 to verify all 40 turns. They also run the JAR
+with an odd-priced alternate board and a different display locale. They leave source intact.
 
 Actual results and a 20-round seed-42 game are in `docs/phase2_*output.txt` and
 `docs/phase2_test_results.txt`. Prompts do not echo redirected input; the sample
@@ -101,11 +104,9 @@ The supplied draw.io diagram includes planned Phase 3 classes. See
 [the current Phase 2 diagram](diagram/phase2.md) for implemented classes only.
 The source ZIP had no separate PNG diagram or LMS sample-output file.
 
-## AI log and submission responsibilities
+## Submission responsibilities
 
-[docs/AI_USE_LOG.md](docs/AI_USE_LOG.md) records this AI-assisted implementation.
-The group must fill in its actual student names, honestly record its own review,
-changes and learning, and understand the submitted code. No student review or
-learning is claimed by the generated log. LMS submission, the three-person group,
-attendance and individual check-in/viva answers must be completed by the students.
-The code and documentation cannot guarantee marks or satisfy those personal tasks.
+LMS submission, the three-person group, attendance, and individual check-in/viva
+answers must be completed by the students. Understand every class before submitting.
+The separate LMS sample-output file was not supplied; its comparison remains
+unverified. The overview's final-submission AI-use log is not included, as requested.

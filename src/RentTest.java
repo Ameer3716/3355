@@ -17,7 +17,7 @@ public class RentTest {
         require(amal.getOwnedSquares().contains(oud) && !sara.getOwnedSquares().contains(oud),
                 "Both ownership lists must agree with the square.");
         game.landOnOwnable(bathaa, sara);
-        System.out.println("Sara's cash: " + sara.getCash());
+        System.out.println("Sara's cash: " + Money.format(sara.getCash()));
         require(sara.getCash() == 764 && amal.getCash() == 516, "Doubled rent must be $96.");
         System.out.println("RentTest passed: $180 buy-out, $96 doubled rent, Sara cash $764.");
     }

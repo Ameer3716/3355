@@ -62,4 +62,13 @@ with tempfile.TemporaryDirectory(prefix="riyadhpoly-two-") as directory:
         + [str(p) for p in sorted((variant / "src").glob("*.java"))], cwd=variant)
     full_game(["java", "-cp", "build", "RiyadhPolyApp"], 2, variant)
 print("PASS: changing only NUM_PLAYERS to 2 gives 20 rounds and 40 turns")
-print("All 5 CLI checks passed.")
+with tempfile.TemporaryDirectory(prefix="riyadhpoly-odd-cli-") as directory:
+    board = Path(directory) / "board.txt"
+    board.write_text((ROOT / "board.txt").read_text().replace(
+        "4,PROPERTY,Al-Oud,BROWN,120,56", "4,PROPERTY,Al-Oud,BROWN,121,56"))
+    normal = full_game(["java", "-jar", "RiyadhPoly.jar", str(board)], 4)
+    other_locale = run(["java", "-Duser.language=de", "-Duser.country=DE",
+                        "-jar", "RiyadhPoly.jar", str(board)], inputs(4))
+    assert normal == other_locale
+print("PASS: odd-priced alternate board completes reproducibly and ignores display locale")
+print("All 6 CLI checks passed.")

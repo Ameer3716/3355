@@ -31,3 +31,13 @@ Run `sh test.sh` (Windows: `test.bat`). Run the game with the instructor's seed,
 Practice changing BOT_RESERVE, SALARY, or NUM_PLAYERS, rebuilding, and explaining
 which behavior changes. Read every implementation before submitting it; this guide
 is preparation material, not evidence that any student has understood the code.
+
+- **Why is cash a double?** A $121 square has a $181.50 buy-out price. Truncating
+  that value to int would underpay the seller and allow a buyer with only $181.
+  All board prices are integers and the multiplier is 1.5, so game balances use
+  only whole or half dollars. These are exactly representable at this game's
+  scale. Net worth and compareTo also preserve those halves. Money.format keeps
+  whole-dollar output unchanged and prints fractional balances with two decimals.
+- **Why convert rent before multiplying?** Board rent is an int. Multiplying two
+  ints can overflow before assignment to a double; casting before multiplication
+  avoids that problem for every rent value the loader accepts.

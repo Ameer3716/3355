@@ -4,7 +4,9 @@ import java.util.ArrayList;
 public abstract class Player implements Comparable<Player> {
     public static final int INITIAL_CASH = 800;
     private final String name;
-    private int cash = INITIAL_CASH;
+    // Integer board prices and 1.5x buy-outs produce only whole/half dollars.
+    // Those values are exactly representable as doubles at this game's scale.
+    private double cash = INITIAL_CASH;
     private int position;
     private int turnsInJail;
     private final ArrayList<Ownable> ownedSquares = new ArrayList<>();
@@ -17,8 +19,13 @@ public abstract class Player implements Comparable<Player> {
     }
 
     public String getName() { return name; }
-    public int getCash() { return cash; }
-    public void addCash(int amount) { cash += amount; }
+    public double getCash() { return cash; }
+    public void addCash(double amount) {
+        if (!Double.isFinite(amount) || !Double.isFinite(cash + amount)) {
+            throw new IllegalArgumentException("Cash adjustment must be finite.");
+        }
+        cash += amount;
+    }
     public int getPosition() { return position; }
     public void setPosition(int position) {
         if (position < 0 || position >= Board.BOARD_SIZE) {
@@ -36,8 +43,8 @@ public abstract class Player implements Comparable<Player> {
         if (!ownedSquares.contains(square)) { ownedSquares.add(square); }
     }
     public void removeSquare(Ownable square) { ownedSquares.remove(square); }
-    public int getNetWorth() {
-        int worth = cash;
+    public double getNetWorth() {
+        double worth = cash;
         for (Ownable square : ownedSquares) { worth += square.getPrice(); }
         return worth;
     }
@@ -45,8 +52,8 @@ public abstract class Player implements Comparable<Player> {
 
     @Override
     public int compareTo(Player other) {
-        int comparison = Integer.compare(other.getNetWorth(), getNetWorth());
-        if (comparison == 0) { comparison = Integer.compare(other.cash, cash); }
+        int comparison = Double.compare(other.getNetWorth(), getNetWorth());
+        if (comparison == 0) { comparison = Double.compare(other.cash, cash); }
         return comparison == 0 ? name.compareTo(other.name) : comparison;
     }
 }
